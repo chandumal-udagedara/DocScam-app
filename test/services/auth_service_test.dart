@@ -98,13 +98,6 @@ void main() {
   // ---------------------------------------------------------------------------
 
   group('signInWithEmail()', () {
-    test('returns firebaseUnavailable when auth is null', () async {
-      final uninitService = AuthService.forTesting(mockAuth);
-      // Manually nullify auth to simulate uninitialized state
-      // Since _auth is set in constructor, we test the initialized path instead
-      // by using the mock to throw FirebaseAuthException
-    });
-
     test('returns success on valid credentials', () async {
       final mockCred = MockUserCredential();
       final mockUser = MockUser();

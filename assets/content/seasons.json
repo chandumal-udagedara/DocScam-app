@@ -1,0 +1,798 @@
+{
+  "schema_version": "1.0.0",
+  "content_version": "2026.08.27",
+  "pack_id": "seasons",
+  "title": "Seasons",
+  "locale": "en-AU",
+  "source": "migrated from lib/question_bank.dart",
+  "questions": [
+    {
+      "id": "seasons-001",
+      "prompt": "Email: - “You are due money of $750, click here and add bank details.”?",
+      "options": [
+        "Click the link and enter info.",
+        "Delete and report as phishing.",
+        "Reply with questions.",
+        "Forward it to a friend to confirm"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "explanation": "Banking information is never requested by email by the tax office.",
+      "asset_image": null,
+      "red_flag_rules": []
+    },
+    {
+      "id": "seasons-002",
+      "prompt": "“To receive a refund, they say you must pay 50 processing fees”.",
+      "options": [
+        "Pay as soon as possible to receive the refund faster.",
+        "Refunds are processed without fees by legitimate organisations.",
+        "Negotiate a smaller processing fee.",
+        "Do not pay anything and report the message as a scam."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "explanation": "Legitimate refunds do not require upfront fees. \nRequests for “processing fees” are a common scam tactic used to extract money from victims.",
+      "asset_image": null,
+      "red_flag_rules": []
+    },
+    {
+      "id": "seasons-003",
+      "prompt": "“Final notice: - Your refund will be canceled. Update via this link.”",
+      "options": [
+        "Clink link.",
+        "Check and delete official portal personally.",
+        "Reply “STOP” to unsubscribe.",
+        "Wait for a follow-up email with new payment details"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "explanation": "Red flags are urgent and threats. Never leave the official portal unchecked.",
+      "asset_image": null,
+      "red_flag_rules": []
+    },
+    {
+      "id": "seasons-004",
+      "prompt": "You have an internet site that seems like the tax office, but the URL is “ato-refunds.net”. Do you think that works?",
+      "options": [
+        "Log in to check your refunds.",
+        "The official gov.au tax site only.",
+        "Add the link to the list of bookmarks.",
+        "Forward the message to confirm if it’s real."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "explanation": "Fake sites. Check gov.au or gov domains (always).",
+      "asset_image": null,
+      "red_flag_rules": []
+    },
+    {
+      "id": "seasons-005",
+      "prompt": "You are presented with the text displayed (receiving an ATO tax refund featuring link). What would be your actions?",
+      "options": [
+        "Forward this message to your friends to warn them.",
+        "Reply “STOP” to avoid these messages.",
+        "Enter TFN and bank details to check if this is real.",
+        "Report/ block the sender."
+      ],
+      "correct_indices": [
+        3
+      ],
+      "explanation": "The government departments will not demand that you seek refunds through text links. Do not interfere with the message, only check with the official channels and report/ block \nto minimize the damage",
+      "asset_image": "assets/Seasons/image29.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "seasons-006",
+      "prompt": "You get an email that seems to be official, but it does not have your name, but it has a label, which is Dear customer.",
+      "options": [
+        "Be warnings – generic greetings are a red flag.",
+        "You can trust it as its professional looking.",
+        "Respond with the reason as to why they did not use your name.",
+        "Click the link to verify your identity first"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "explanation": "When you are communicating with the tax office, it is always necessary to use your full legal name. The sign of a scam is generic greetings.",
+      "asset_image": "assets/Seasons/image30.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "seasons-007",
+      "prompt": "You get a phone call in which the officer in charge of tax is threatening to arrest you on the spot unless \nyou pay pending taxes on the phone. Is this a scam?",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "explanation": "No government tax office will accept a payment via phone or arrest anyone.",
+      "asset_image": null,
+      "red_flag_rules": []
+    },
+    {
+      "id": "seasons-008",
+      "prompt": "This SMS says HMRC owes you a tax rebate and includes a link. Is this real?",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "explanation": "HMRC never sends rebate notices by SMS links. Fake links steal your details.",
+      "asset_image": "assets/Seasons/image32.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "seasons-009",
+      "prompt": "What is the safest action here?",
+      "options": [
+        "Call back immediately to settle your debt.",
+        "Save the number and wait for more calls.",
+        "Ignore and report the voicemail as a scam.",
+        "Text back asking for proof."
+      ],
+      "correct_indices": [
+        3
+      ],
+      "explanation": "The safest option is to ignore and report. Tax authorities communicate via official \n letters or portals, not random voicemails pressuring immediate action.",
+      "asset_image": "assets/Seasons/image33.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "seasons-010",
+      "prompt": "How can you tell this is a scam?",
+      "options": [
+        "It uses a shortened bit.ly link.",
+        "It provides an exact official domain.",
+        "It asks you to log in via a secure government app.",
+        "It offers a support hotline."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "explanation": "The shortened link (bit.ly) is the red flag. Government agencies only use official.gov.au or similar domains, \nnever third-party shorteners.",
+      "asset_image": "assets/Seasons/image34.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "seasons-011",
+      "prompt": "What’s the red flag in this email?",
+      "options": [
+        "IRequest to open an attached refund form.",
+        "Information about processing refunds.",
+        "Use of “ATO” in the subject line.",
+        "Mention of a 28-day processing period"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "explanation": "Attachments requesting financial info are a major warning sign. Scammers hide malware or phishing pages in attachments.\nATO would direct you to log in to their secure portal.",
+      "asset_image": "assets/Seasons/image35.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "seasons-012",
+      "prompt": "Which clue shows this SMS is a scam?",
+      "options": [
+        "The message offers a bonus.",
+        "Linked to natural disasters.",
+        "The URL contains “verification-digital.com,” not the real myGov site.",
+        "It mentions tax return details."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "explanation": "The domain is fake. Real myGov websites only use my.gov.au. Scammers add extra words like “verification-digital” to trick users",
+      "asset_image": "assets/Seasons/image36.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "seasons-013",
+      "prompt": "What is the biggest red flag here?",
+      "options": [
+        "The email urges immediate taxpayer verification",
+        "The sender domain is unrelated to IRAS.",
+        "It includes the IRAS logo.",
+        "It mentions the refund process"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "explanation": "The domain (charterschools.ae) has nothing to do with the Singapore tax authority. Official emails come from.gov.sg. \nLogos can be copied, but sender domains reveal the truth.",
+      "asset_image": "assets/Seasons/image37.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "seasons-014",
+      "prompt": "What makes this email suspicious?",
+      "options": [
+        "It mentions registering for a refund program.",
+        "It offers an unrealistic 19% refund from past taxes.",
+        "It includes a receipt reminder.",
+        "It uses the term “Cut Off Taxes Program.”"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "explanation": "Unrealistic refunds (19% back from old taxes) are a huge red flag. \nThe ATO does not run special refund programs announced by email",
+      "asset_image": "assets/Seasons/image38.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "seasons-015",
+      "prompt": "You receive a text message claiming to be from the Tax Office:\n“Your tax refund is ready. Click here to claim: http://refund-portal-tax.com/refund.”Is this SMS genuine?",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "explanation": "Official tax authorities never send refund links by SMS. Scammers use fake websites (like refund-portal-tax.com) \nto steal personal and bank details. Always access services via the official government website.",
+      "asset_image": null,
+      "red_flag_rules": []
+    },
+    {
+      "id": "seasons-016",
+      "prompt": "An email arrives with the subject line: ‘Immediate Action Required: Tax Account Suspension’. It says your tax account will be suspended \nwithin 24 hours unless you confirm your details through the provided link. \nWhat should you do with this email?",
+      "options": [
+        "Click the link immediately to secure your account.",
+        "Delete the email and report it as a phishing attempt.",
+        "Reply with your tax file number for verification.",
+        "Forward the email to friends to warn them."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "explanation": "The correct response is to delete and report it. Legitimate tax agencies do not threaten immediate suspension \nor demand urgent action by email. Threatening language + suspicious links = phishing scam",
+      "asset_image": null,
+      "red_flag_rules": []
+    },
+    {
+      "id": "seasons-017",
+      "prompt": "What signs show this is a scam?",
+      "options": [
+        "Fake sender domain ",
+        "Urgent deadline ",
+        "No personalization (“Dear Customer”) ",
+        "Secure florist payment page"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Scammers use urgency, generic greetings, and fake domains",
+      "asset_image": "assets/Seasons/image39.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "seasons-018",
+      "prompt": "Is this offer legitimate?",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "explanation": "The domain is the official Qantas site (qantas.com), and the discount is realistic (15%), not exaggerated.",
+      "asset_image": "assets/Seasons/image40.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "seasons-019",
+      "prompt": "What’s the biggest warning sign here?",
+      "options": [
+        "Late delivery",
+        "Asking for a credit card ",
+        "Message on WhatsApp",
+        "Flowers are seasonal"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "explanation": "Legit florists don’t ask for card info over WhatsApp.Payment details should only be shared through official checkout pages",
+      "asset_image": "assets/Seasons/image41.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "seasons-020",
+      "prompt": "Is this request safe?  Dating app chat : \n “I’d love to meet you. Can you send me $100 for a Valentine’s train ticket?”",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "explanation": "Romance scammers often ask for travel money.",
+      "asset_image": null,
+      "red_flag_rules": []
+    },
+    {
+      "id": "seasons-021",
+      "prompt": "What are the scam signs?",
+      "options": [
+        "Unrealistic discount",
+        "Pressure to pay quickly",
+        "Generic sender domain",
+        "Linked to the official jeweler"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Unrealistic sales with urgency are scams",
+      "asset_image": "assets/Seasons/image42.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "seasons-022",
+      "prompt": "Someone sends you a message that he or she is hugely attracted to you after seeing one photo on a dating application. They soon claim \nto have powerful emotions and request to discuss on WhatsApp. They call a few days later \nand tell you that they are stuck in a foreign country and require you to send them $400 to cover an emergency hotel bill.",
+      "options": [
+        "Send the $400 because it’s an emergency.",
+        "Suggest a short video call first and refuse to send money.",
+        "Give them your address so they can send proof.",
+        "Block them immediately without checking."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "explanation": "Romance scams often ask for money after a fast emotional bonding. Ask for live video proof; never send money.",
+      "asset_image": null,
+      "red_flag_rules": []
+    },
+    {
+      "id": "seasons-023",
+      "prompt": "You receive a text message: “Valentine Gift: Your flowers are subject to confirmation. Shipment in the USA costs $5: http://val-fleurs.delivery.\nThe sender states that he/she has attempted delivery but requires you to pay before delivering the bouquet.",
+      "options": [
+        "Click the link and pay $5 to get the flowers.",
+        "Reply asking who sent the flowers.",
+        "Ignore and delete the message; check with the official florist directly.",
+        "Share the link with friends to ask if it’s legit."
+      ],
+      "correct_indices": [
+        2
+      ],
+      "explanation": "Fake offers of small shipping charges are archetypal; check them out through the official site of the florist, and do not click.",
+      "asset_image": null,
+      "red_flag_rules": []
+    },
+    {
+      "id": "seasons-024",
+      "prompt": "One of the social posts requests you to donate to a crisis fund on Valentine's Day to help aid the couples \nwho have suffered in recent disasters. The donation button appears to be informal, \nand the page requests the complete card details, together with the driver's license number.",
+      "options": [
+        "Donate immediately because it’s for a worthy cause.",
+        "Share the fundraiser on social media.",
+        "Verify the charity through an official charity regulator and donate only via trusted platforms.",
+        "Send money using a friend-to-friend app without checking."
+      ],
+      "correct_indices": [
+        2
+      ],
+      "explanation": "During holidays, scammers create phony causes for pets. Check donations through official giving registries.",
+      "asset_image": null,
+      "red_flag_rules": []
+    },
+    {
+      "id": "seasons-025",
+      "prompt": "Someone writes to say that he or she has some compromising Valentine's photos that you have sent and that unless he or she is paid, \nhe or she will publish them. They provide a deadline that is brief and a crypto wallet address.",
+      "options": [
+        "Pay immediately to stop them.",
+        "Negotiate the fee down.",
+        "Do not pay, preserve evidence, block, and report to police and platform.",
+        "Reply asking what photos they have"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "explanation": "Money is hardly enough to keep the scammers at bay. Secure evidence and report; seek professional assistance",
+      "asset_image": null,
+      "red_flag_rules": []
+    },
+    {
+      "id": "seasons-026",
+      "prompt": "You come across a small Valentine’s concert on the Internet with VIP seats and a low price. \nThe site displays a counter and requests that you make a payment to the bank to gain access to tickets.",
+      "options": [
+        "Pay by bank transfer, it’s cheaper than card fees.",
+        "Use a secure platform (card/PayPal) and verify the event on the venue’s official site.Message the seller your ID to speed things up.",
+        "Buy multiple tickets and resell to friends."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "explanation": "Bank operations are finalized; validate eventualities through official means and apply buyer protection payments.",
+      "asset_image": null,
+      "red_flag_rules": []
+    },
+    {
+      "id": "seasons-027",
+      "prompt": "On the eve of the 2 nd day of February (a day before valentine day), you receive a text message which states: \n“You have a delivery of Valentine's! Test your address to get your gift. Failing to respond would result in the cancellation of the order.” \nThe message requests that you send me your complete home address directly. It does not include any link, and this makes it appear safer. What is the safest response?",
+      "options": [
+        "Reply with your home address so the delivery can arrive on time.",
+        "Ignore the message completely.",
+        "Contact the delivery company directly using their official website.",
+        "Forward the message to a family member to check if they ordered the gift"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "explanation": "It is a social hacking fraud. The use of fake texts of delivery robs individuals of their personal information, whereas genuine businesses update the status only on their official websites.",
+      "asset_image": null,
+      "red_flag_rules": []
+    },
+    {
+      "id": "seasons-028",
+      "prompt": "Is this a real Valentine’s greeting or a scam?",
+      "options": [
+        "Real",
+        "Scam"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "explanation": "Everyone likes the idea of having a secret admire and scammers use that to trick you. If you can’t confirm the sender delete this. Never reply or click the links.",
+      "asset_image": "assets/Seasons/image44.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "seasons-029",
+      "prompt": "Your Instagram obsessed girlfriend happily shows you this Instagram message. You identify this as a scam and tell her to delete it. Out of the reasons below,which one is NOT something you would mention as proof it’s a scam?",
+      "options": [
+        "The link looks fake and could steal your Instagram login.",
+        "Instagram doesn’t usually send feature invites by random DMs.",
+        "The message came late at night.",
+        "The web address is not the official Instagram domain."
+      ],
+      "correct_indices": [
+        2
+      ],
+      "explanation": "The real red flags are fake links random DMs and unofficial domains. Timing (getting messages at night) doesn’t prove anything because scammers can send messages at anything.",
+      "asset_image": "assets/Seasons/image45.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "seasons-030",
+      "prompt": "You get this call on Valentine’s Day. What makes its scam?",
+      "options": [
+        "Real phone providers don’t ask for SIM details over the phone.",
+        "The offer of “Valentine’s bonus data” sounds unusual and fake.",
+        "They create pressure by saying, ‘you must confirm right now’.",
+        "The caller used polite greeting at the start."
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Real providers don’t ask for SIM details. Being polite is very normal for scammers. Hang up and call the official customer service number instead.",
+      "asset_image": "assets/Seasons/image46.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "seasons-031",
+      "prompt": "On December 26, you get a text saying that you must pay a FasTrak Lane toll fee at once or risk late charges and legal action. The message has a link:  \nhttps://thetollroads.com-fu2s.cfd/us, requests you to respond with the Y that will trigger the message, and even goes ahead to wish you a happy holiday.What should you do?",
+      "options": [
+        "Reply “Y” and follow the link to pay the fee quickly so you don’t face legal action.",
+        "Report the message as spam or phishing and delete it.",
+        "Open the link in a different browser just to check if it looks official.",
+        "Forward the text to a family member to ask if they also received it"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "explanation": "This is a phishing scam. The fraudulent payment option and lawsuits are used to intimidate you into making the payment. Toll agencies do not send out holiday texts on links such as these. The precautionary measure is to report and delete.",
+      "asset_image": "assets/Seasons/image47.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "seasons-032",
+      "prompt": "You get a Facebook advert, it reads: “WINTER HOLIDAY SPECIAL 5 nights in Paris only 50 dollars including flights and hotel. Limited offer, book now!” The site requests you to provide your passport and card number.What should you do?",
+      "options": [
+        "Report the ad to Facebook and avoid entering any details.",
+        "Book quickly before the deal expires.",
+        "Share the link with friends to see if they think it’s real.",
+        "Ask the site if you can pay later after confirming the trip"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "explanation": "Fraudsters insist on direct payments, enabling victims to lose their money. Always pay using secure booking sites.",
+      "asset_image": null,
+      "red_flag_rules": []
+    },
+    {
+      "id": "seasons-033",
+      "prompt": "You get an email that states: Congratulations! You have won a free cruise in the Caribbean. In order to claim your tickets, send your home address and a processing fee of $20.What should you do?",
+      "options": [
+        "Pay the $20 since the prize is valuable.",
+        "Reply asking for proof of the prize.",
+        "Delete the email immediately.",
+        "Report the email as a scam using your email provider’s “Report phishing” option"
+      ],
+      "correct_indices": [
+        3
+      ],
+      "explanation": "Authoritative rewards do not require charges. Reporting scamming prevents other people.",
+      "asset_image": null,
+      "red_flag_rules": []
+    },
+    {
+      "id": "seasons-034",
+      "prompt": "You get a WhatsApp message that is like: Exclusive Holiday Raffle. You are randomly selected to win a trip to Dubai with all expenses paid! \nTo verify your prize, you are required to respond using your full name, date of birth, and a $25 insurance fee using the link below. \nThe responses to the winners have a time limit of 12 hours, after which the prize will be lost.What should you do?",
+      "options": [
+        "Reply with your details and pay the fee to secure the prize.",
+        "Delete the message without replying.",
+        "Report the message directly on WhatsApp as spam.",
+        "Forward the message to a friend to check if it’s real"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "explanation": "True raffles do not require payment or personal information. Spam reporting prevents the scammer from attacking others.",
+      "asset_image": null,
+      "red_flag_rules": []
+    },
+    {
+      "id": "seasons-035",
+      "prompt": "You are searching on the internet for last-minute New Year's Eve holiday packages. A website sells 5 5-star hotels in New York and flights for a total of 150 dollars.\nThe site is professional and includes countdown timers and states that there are only 2 packages left. On the booking page, full card payment in advance is done via direct bank transfer.What should you do?",
+      "options": [
+        "Transfer the money quickly before the offer sells out.",
+        "Use only trusted travel platforms and official airline/hotel websites to book.",
+        "Email the site for confirmation before paying.",
+        "Save the deal and share it on social media to see if others booked it"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "explanation": "The urgency and enormous discounts are the tricks played by the fake holiday websites to lure customers. Booking platforms should always be verified.",
+      "asset_image": null,
+      "red_flag_rules": []
+    },
+    {
+      "id": "seasons-036",
+      "prompt": "One of the emails is purported to be that of the Holiday Rewards Program. It claims that you got a $500 travel voucher and that you have to visit a link in order to redeem it. The email appears to be well-dressed using logos, but the sender is on hotmail.com.What should you do?",
+      "options": [
+        "Click the link and enter your details to claim the voucher.",
+        "Forward the email to your IT department or email provider’s phishing report system.",
+        "Save the email in case you want to use the voucher later.",
+        "Reply asking for proof of your reward before clicking anything"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "explanation": "A true business will not use a free email address to send vouchers. Coming out and reporting it prevents further phishing.",
+      "asset_image": null,
+      "red_flag_rules": []
+    },
+    {
+      "id": "seasons-037",
+      "prompt": "Now it is near the end of December, and you get an email, and the subject line is: Final Chance: Get Your Holiday Travel Voucher Before It’s Too Late. The email states that you have won a 1000 holiday voucher to travel and book in any hotel in the world. \nThe message is professional, has logos of the airlines, and even a fake customer care number at the bottom. To redeem, one should use a link and enter their passport information and pay a fee of a little 10 dollars. \nThe message in the email is a threat: this promotion is limited to 24 hours, or you will lose your voucher. What should you do?",
+      "options": [
+        "Pay the $10 and enter your passport details to make sure you don’t lose the voucher.",
+        "Report the email to your email provider as phishing and then delete it.",
+        "Call the customer service number in the email to confirm if it’s genuine.",
+        "Forward the email to your friends so they can try to claim the voucher too"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "explanation": "This is a phishing scam. Fraudsters get money and personal information by means of fake vouchers, small fees, and deadlines. Reporting and deleting is the least dangerous approach.",
+      "asset_image": null,
+      "red_flag_rules": []
+    },
+    {
+      "id": "seasons-038",
+      "prompt": "You get a text message which reads: Hello! We offer a Black Friday Sunday special in which we give you the largest price ever on your home in CASH. You WILL NOT regret looking.” There is a suspicious link in the message: biggestpricenow.net/9xHMNBt1. What should you do?",
+      "options": [
+        "Click the link to see the deal before it expires.",
+        "Report the message as spam and delete it.",
+        "Forward the text to friends to ask if they got the same deal.",
+        "Copy the link into another browser to check if the site looks legitimate"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "explanation": "This is a phishing scam. The special offer and the suspicious link are offered as an urgency to initiate a click on it. The best course of action is to report and delete the message.",
+      "asset_image": "assets/Seasons/image48.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "seasons-039",
+      "prompt": "On black Friday weekend, you get a text that says: \n“Exclusive Sunday Special! Sell the best cash price on your house. Exclusive holiday package — hurry before it's too late! Address: biggestpricenow.net/9xHMNBt1.” \nThe message asks you to do it fast and assures you will not regret it. What should you do?",
+      "options": [
+        "Ignore the too-good-to-be-true offer and block the sender.",
+        "Click the link to see the details before deciding.",
+        "Share the message with friends in case they’re interested.",
+        "Reply asking for more information about the offer"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "explanation": "This is a holiday scam. Fraudsters take advantage of counterfeit Black Friday offers and panicky wording to attract victims. Clicking, sharing, or replying will only add to the risk you take. The best thing to do is to block the sender.",
+      "asset_image": null,
+      "red_flag_rules": []
+    },
+    {
+      "id": "seasons-040",
+      "prompt": "Your friend commented on an unpleasant incident that happened while travelling. And your friend got this reply from the Airline. What is your next move?",
+      "options": [
+        "Tell your friend to send the WhatsApp number.",
+        "Tell your friend to block, delete, and report this message to the official Airline.",
+        "Tell your friend to reply to this response.",
+        "Tell your friend to send this to the other people so they can also get a refund."
+      ],
+      "correct_indices": [
+        2
+      ],
+      "explanation": "Fake Airline accounts may ask for WhatsApp or email. Real Airlines don't do that. Check for the verified account, don't reply or share, block and report instead.",
+      "asset_image": "assets/Seasons/image49.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "seasons-041",
+      "prompt": "You recognize this as?",
+      "options": [
+        "Legitimate",
+        "Scam"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "explanation": "This is a scam. The message asks you to “Verify your bank card” using a strange link. Real banks or hotels never do this by text. Clicking the link lets scammers steal your card or login details, install malware on your device, or take over accounts and steal money/identity",
+      "asset_image": "assets/Seasons/image50.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "seasons-042",
+      "prompt": "You booked a hotel recently with Booking.com. Today, you received this email from an unknown email address. What is the best action?",
+      "options": [
+        "Block, report, and delete the email.",
+        "Contact them using the button.",
+        "Reply to the email.",
+        "Click the Booking.com link in the email."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "explanation": "Scammers send fake booking emails that look urgent. If the sender is unknown, block the report and delete it. Don't click links or reply. Always check your booking progress or booking details through the official website or app.",
+      "asset_image": "assets/Seasons/image51.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "seasons-043",
+      "prompt": "You have a property listed on Booking.com. And you have been receiving good reviews about your property and service for years, especially during holiday seasons. Today you get this email,",
+      "options": [
+        "You panic and want to see the guest complaint, so you click the button in the email body.",
+        "You replied as soon as you saw this email.",
+        "You blocked the email and deleted it.",
+        "Send this email to your staff to check on the complaint."
+      ],
+      "correct_indices": [
+        3
+      ],
+      "explanation": "Don't panic if you get an email like this. Scammers try to scare you with fake “Complaints” or “Block your hotel” to make you click quickly. Stay calm. Ignore the link and always check directly in your official account for any real issues.",
+      "asset_image": "assets/Seasons/image52.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "seasons-044",
+      "prompt": "This is a legitimate email. What do you think about this statement?",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "explanation": "Emails offering “Free tickets” are a classic scam. Airlines don't give away round-trip tickets through random emails. Always check with the official website.",
+      "asset_image": "assets/Seasons/image53.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "seasons-045",
+      "prompt": "What is the biggest red flag in this email?",
+      "options": [
+        "It promises TWO round-trip tickets out of nowhere.",
+        "It creates urgency by giving you a deadline.",
+        "The email provides a link and asks you to click the link to claim the free tickets.",
+        "All of the above"
+      ],
+      "correct_indices": [
+        3
+      ],
+      "explanation": "Real Airlines doesn't give free tickets like in the email. Always delete and report this kind of email and check with the official airline website.",
+      "asset_image": "assets/Seasons/image54.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "seasons-046",
+      "prompt": "One of your family members received this email. What is your opinion about this?",
+      "options": [
+        "This is a scam.",
+        "This is a great opportunity.",
+        "Click the button.",
+        "Ask them to share this with you, too."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "explanation": "Scammers often use real airline logos and images to make emails look genuine, but these can be easily copied or stolen. Do not trust the visuals. Always check the sender's email and link address. If the domain is not the official airline domain, the email is fake, and the images and logos are just bait to trick you.",
+      "asset_image": "assets/Seasons/image55.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "seasons-047",
+      "prompt": "What should be your right answer?",
+      "options": [
+        "Thank you so much!.",
+        "I didn't enter a contest, but thank you!.",
+        "How can I pay?.",
+        "No, thank you! (Hang up) and block the number."
+      ],
+      "correct_indices": [
+        3
+      ],
+      "explanation": "This is a real classic scam. Real prizes never ask for a fee. Don't engage. Hang-up and block the number.",
+      "asset_image": "assets/Seasons/image56.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "seasons-048",
+      "prompt": "What will you do?",
+      "options": [
+        "Click the link..",
+        "Reply to the message.",
+        "Block, Delete and report.",
+        "Call the number"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "explanation": "The link is fake and unsafe. Airlines only send boarding passes through the official app or website.",
+      "asset_image": "assets/Seasons/image57.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "seasons-049",
+      "prompt": "Is this the official website of Qantas Airlines?",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "explanation": "Scammers make fake airline pages using real logos and names. The official sites always use the real domain, such as qantas.com, united.com, with http:// and a padlock. Real social media pages also have a blue check mark. If the name looks strange,\nit's fake. Always go to the official website or use the app.",
+      "asset_image": "assets/Seasons/image58.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "seasons-050",
+      "prompt": "Is this email a scam or not a scam, and why?",
+      "options": [
+        "This is a scam - This has a link.",
+        "This is not a scam - This email is from the official Qantas Airways domain, and it's directly addressed to you.",
+        "This is a scam - Has used polite language.",
+        "This is not a scam - No urgency, no fee to pay, and they don't ask for personal details."
+      ],
+      "correct_indices": [
+        1,
+        3
+      ],
+      "explanation": "This is not a scam. This email comes from the official domain, including your real booking details. Uses clear, polite language. There is no urgency, no request for a payment, and no demand for personal information. Always check the sender's address and link address.",
+      "asset_image": "assets/Seasons/image59.png",
+      "red_flag_rules": []
+    }
+  ]
+}

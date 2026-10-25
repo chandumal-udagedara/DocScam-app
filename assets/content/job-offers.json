@@ -1,0 +1,786 @@
+{
+  "schema_version": "1.0.0",
+  "content_version": "2026.08.27",
+  "pack_id": "job-offers",
+  "title": "Job Offers",
+  "locale": "en-AU",
+  "source": "migrated from lib/question_bank.dart",
+  "questions": [
+    {
+      "id": "job-offers-001",
+      "prompt": "You are seeking a job; you’ll get a job message with a high-rate payment, like below. What will you send back? Please select your answer.",
+      "options": [
+        "YES",
+        "NO",
+        "Ignore/ report the message"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "explanation": "If the salary sounds too good to be true, it usually is. Always research before replying.",
+      "asset_image": "assets/Jobs/image01.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "job-offers-002",
+      "prompt": "“This is your manager. Please purchase immediately 500 gift cards with a value of $500 and e-mail me the code.” What are the best actions?",
+      "options": [
+        "Purchase the cards face or lose your job",
+        "Response by requesting that gift card",
+        "Dial your manager on his/her official number",
+        "Share this message with your colleagues"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "explanation": "Scammers impersonate bosses to put pressure on them. Never use unofficial   numbers and always confirm using official numbers.",
+      "asset_image": null,
+      "red_flag_rules": []
+    },
+    {
+      "id": "job-offers-003",
+      "prompt": "“Congratulations! You won 1000 vouchers as a reward for your hard work! Click here to claim.” What should you do?",
+      "options": [
+        "Click the link to view the prize",
+        "Report or block the number",
+        "Insert your information to check whether it is real or not",
+        "Call the phone number in the message to confirm."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "explanation": "In the real world, companies do not provide prizes at random. Such a link can be used to get phished or malware.",
+      "asset_image": null,
+      "red_flag_rules": []
+    },
+    {
+      "id": "job-offers-004",
+      "prompt": "You find a site that offers sneakers at 80% off, bank transfer is the sole method of payment",
+      "options": [
+        "Make purchases before it is finished selling",
+        "Request customer care about PayPal.",
+        "Review and payment safety in check and then make decision.",
+        "Believe the offer since it is on social media"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "explanation": "The absence of safe payment systems such as PayPal or credit cards is also a good warning.",
+      "asset_image": null,
+      "red_flag_rules": []
+    },
+    {
+      "id": "job-offers-005",
+      "prompt": "Which answer would you prefer?Facebook post: Two times money today, hit your two times money today, in case you invest",
+      "options": [
+        "Transfer small test amount",
+        "Request their licensed/ registration number",
+        "Introduce friends who are interested in crypto",
+        "Ignore the post and move"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "explanation": "Crypto currency scams are also characterized by promises of high returns, guaranteed.",
+      "asset_image": null,
+      "red_flag_rules": []
+    },
+    {
+      "id": "job-offers-006",
+      "prompt": "On LinkedIn someone writes to you “Google is in urgent need of employees. No interview required. All you need to do is to send in your ID and bank details and get on boarded.”",
+      "options": [
+        "Send the ID to prove your identity",
+        "Ask for an official job posting link",
+        "Ignore it because it’s too much effort",
+        "Give partial bank details to test them"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "explanation": "Why is this suspicious? Always interviews are necessary in big companies, Recruiters do not request bank information or use personal email first",
+      "asset_image": null,
+      "red_flag_rules": []
+    },
+    {
+      "id": "job-offers-007",
+      "prompt": "You are offered a remote assistant job. “We’ll send you a cheque for $2000. Make a deposit, collect your salary and send the rest to our supplier.”",
+      "options": [
+        "Deposit the cheque and follow instructions",
+        "Refuse the offer and block communication",
+        "Ask for smaller payment to rest",
+        "Send the money and then do a follow-up with the bank"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "explanation": "Fake cheque scams get you liable to bounced funds. Never send money back.",
+      "asset_image": null,
+      "red_flag_rules": []
+    },
+    {
+      "id": "job-offers-008",
+      "prompt": "A company gives you a cheque of $3000 prior to you even beginning to work and requests you to remit a portion of its back to the company. Do you believe that this is safe?",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "explanation": "This is a scam of overpayment/ take cheque",
+      "asset_image": null,
+      "red_flag_rules": []
+    },
+    {
+      "id": "job-offers-009",
+      "prompt": "A recruiter you that you are chosen to work on a paid internship, however, you must purchase software license first, which costs $250. Is this normal?",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "explanation": "Real internships offer needed equipment, and do not expect purchasers to do so.",
+      "asset_image": null,
+      "red_flag_rules": []
+    },
+    {
+      "id": "job-offers-010",
+      "prompt": "Fill in the blanks. You got an e-mail concerning a new job opportunity. They request initial charges to train. It is a textbook scam of a type. Choices: ................",
+      "options": [
+        "Job offers scam",
+        "Advance fee scam"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "explanation": "Any adviser type scheme will first demand funds and then offer employment to you",
+      "asset_image": null,
+      "red_flag_rules": []
+    },
+    {
+      "id": "job-offers-011",
+      "prompt": "Is this email genuine?",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "explanation": "Google only uses@google.com emails. Fake domain and request for bank \tdetails are red flags.",
+      "asset_image": "assets/Jobs/image02.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "job-offers-012",
+      "prompt": "What is the biggest red flag here?“You’ve been selected for a part-time job. To start, pay a $50 training fee.”",
+      "options": [
+        "The offer came via social media",
+        "Asking for a training fee",
+        "The job is part-time",
+        "The message is friendly"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "explanation": "Real jobs never ask you to pay upfront.",
+      "asset_image": null,
+      "red_flag_rules": []
+    },
+    {
+      "id": "job-offers-013",
+      "prompt": "What are the red flags?",
+      "options": [
+        "Requesting ID copy",
+        "Requesting credit card photo",
+        "Offering job immediately without interview ",
+        "Contacting on WhatsApp"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "No real employer needs personal ID or card details via messaging apps",
+      "asset_image": "assets/Jobs/image03.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "job-offers-014",
+      "prompt": "Is this email genuine?",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "explanation": "The email is from the official@google.com domain, and it directs you to \tthe company’s verified careers portal",
+      "asset_image": "assets/Jobs/image04.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "job-offers-015",
+      "prompt": "Is this a legitimate Unilever domain?",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "explanation": "Unilever uses@unilever.com. Fake domains with extra words are scams",
+      "asset_image": "assets/Jobs/image05.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "job-offers-016",
+      "prompt": "What signs show this is a genuine recruiter?",
+      "options": [
+        "Verified LinkedIn recruiter badge",
+        "Provides official company careers page ",
+        "Requests for personal bank info ",
+        "Pressures you to act immediately"
+      ],
+      "correct_indices": [
+        0,
+        1
+      ],
+      "explanation": "Verified recruiters always link to official company portals and never ask for sensitive info directly.",
+      "asset_image": "assets/Jobs/image06.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "job-offers-017",
+      "prompt": "Which parts are suspicious?",
+      "options": [
+        "Asking for credit card ",
+        "High weekly salary",
+        "Mystery shopper jobs are real",
+        "No interview or screening"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "Real companies pay via secure payroll, not credit card",
+      "asset_image": "assets/Jobs/image07.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "job-offers-018",
+      "prompt": "What’s the most dangerous red flag?",
+      "options": [
+        "Hired without interview ",
+        "Contacting on LinkedIn",
+        "Microsoft is a big company",
+        "Message looks professional"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "explanation": "No major company hires without interviews or background checks.",
+      "asset_image": "assets/Jobs/image08.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "job-offers-019",
+      "prompt": "What makes this a legitimate job offer? Job ad: “Data Analyst – Entry Level. $55,000/year. Benefits included. Apply directly via SEEK.”",
+      "options": [
+        "Listed on a trusted job board",
+        "Extremely high pay",
+        "No interview required",
+        "Requests for money upfront"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "explanation": "Being posted on a well-known job board (SEEK, indeed, LinkedIn) and offering realistic pay/benefits is typical for genuine roles",
+      "asset_image": null,
+      "red_flag_rules": []
+    },
+    {
+      "id": "job-offers-020",
+      "prompt": "A text message is sent by a random number saying that he/she is indeed. \n The sender states that your resume was referred by internet agencies and provides you with online remote employment that pays 70-300 a day,\nbut requires you to work only 60-90 minutes, and the payment is made immediately. \nThey request you to respond either with yes or no if you are interested.What should you do?",
+      "options": [
+        "Reply “yes” to learn more about the job",
+        "Reply “no” to decline politely",
+        "Ignore and delete the message",
+        "Forward the message to friends who may be interested"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "explanation": "This is a fake job email. In the real world, there is no high wage and little work, or a yes/no response. \nIn response, it will only confirm that your number is being used and increase the chances of fraud. The best thing to do is to block the sender.",
+      "asset_image": "assets/Jobs/image09.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "job-offers-021",
+      "prompt": "You get a text message from an unfamiliar number saying that it was sent by SEEK. \nThe advertisement claims they are looking to recruit for a “flexible, distant role”, which simply demands 60-90 minutes of work daily and offers AUD 150-300 a day. It also grants you paid annual leave after 6 months and requests that you submit your application by simply responding Yes. \nWhat should you do?",
+      "options": [
+        "Reply “Yes” to secure the job immediately",
+        "Reply “No” to decline politely",
+        "Ignore, delete the message, and block the sender ",
+        "Share the opportunity with your friends"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "explanation": "The scheme is a fake since the compensation is too high with minimal effort required, \n and genuine organizations would not use random text messages to hire employees. \n The best move is to disregard it and get rid of it.",
+      "asset_image": "assets/Jobs/image10.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "job-offers-022",
+      "prompt": "On LinkedIn, an individual who pretends to be a recruiter in a reputable IT firm sends you a direct message.\nThey tell them they need remote workers and pay $3,000 per week to do the data entry. The recruiter demands immediate action and attaches a PDF file, which is called the Job Contract. \n Upon opening the document, it requests that you provide your full name, address, bank details, and a copy of your driver's license.",
+      "options": [
+        "Fill out the form and send it back immediately",
+        "Reply and ask for an official company email address",
+        "Do not open or share personal details, and block the recruiter",
+        "Share the job contract with your classmates to check if it’s genuine"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "explanation": "Simple tasks should be baited with high pay. Asking for sensitive information such as IDs and bank accounts is identity theft.\nLegit recruiters do not use unsafe DMs on social media with harmful attachments.",
+      "asset_image": null,
+      "red_flag_rules": []
+    },
+    {
+      "id": "job-offers-023",
+      "prompt": "You get a text message that is sent by an unknown number. This email purports to be sent by a person named Nina, who is referred to as a person of Jora, \nand that your resume was referred to by various recruitment agencies. The message is of remote employment with a salary of $150-300 an hour for just 60-90 minutes of labor with same-day.\nWhat should you do?",
+      "options": [
+        "Reply “YES” to apply quickly before the job is gone",
+        "Reply “NO” to let them know you are not interested",
+        "Ignore, delete the message, and block the number",
+        "Forward the message to your friends in case they want to apply"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "explanation": "It is a scam since it offers a person a lot of money at minimal effort from an unfamiliar sender. It is not the real companies that recruit through random texts with requests like: Yes/No. \nThe most prudent thing to do is to disregard and delete the message.",
+      "asset_image": "assets/Jobs/image11.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "job-offers-024",
+      "prompt": "You got a phone call from somebody who claims to be in the HR department of a well-known airline. They claim that you have been pre-selected to work \nas cabin crew in a foreign country. The caller says that prior to official training, you must book your flight tickets on your own through their partner agency \nand send a copy of your passport. They even threaten you that unless you do it now, the people will allow the other person.",
+      "options": [
+        "Provide the passport copy and book the flight immediately",
+        "Ask for written confirmation via email before paying",
+        "End the call and report the incident",
+        "Save the details and think about it later"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "explanation": "Urgency and fear of missing out are some of the tactics employed by scammers to pressure their victims. Practical employers take the travel organization \nseriously and do not require personal papers or flight tickets from unfamiliar agencies",
+      "asset_image": null,
+      "red_flag_rules": []
+    },
+    {
+      "id": "job-offers-025",
+      "prompt": "You get a text message from an unknown number saying that it is Camille of Hotjar. It is an online remote job that gives the message that your qualifications have been suggested by online recruitment agencies.\nIt offers a remuneration of $70-300 per hour at a minimum of 60-90 minutes’ working, and immediate payment. To apply, you are instructed to write yes or no.\nWhat should you do?",
+      "options": [
+        "Reply “yes” to take advantage of the job opportunity",
+        "Reply “no” to decline politely",
+        "Ignore the message, delete it, and block the sender",
+        "Share the message with friends in case they are interested"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "explanation": "It is a scam email with false promises of unrealistic, high-paying jobs with minimum work effort and urging quick responses. Hotjar is not seeking legit employees by chance. \nThe safest option is to delete and block the number.",
+      "asset_image": "assets/Jobs/image12.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "job-offers-026",
+      "prompt": "You get the email with the following statement: \"We are in dire need of remote assistants. None of the required skills and experience. \nEarn $2,000 per week, paid in cash. First, please provide us with your full name, address, and a picture of your ID.",
+      "options": [
+        "Send the details quickly to secure the job",
+        "Ask if the company can pay by bank transfer",
+        "Ignore and delete the email",
+        "Forward the email to friends in case they are interested"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "explanation": "It is a scam as no employer, even in reality, promises enormous compensation, with zero skills, and no requirements regarding personal ID are requested by email.",
+      "asset_image": null,
+      "red_flag_rules": []
+    },
+    {
+      "id": "job-offers-027",
+      "prompt": "You get an email notification of a position at a reputable bank from a recruiter. The proposal is sincere, and the email is dispatched \nusing \"bankjobs2024@gmail.com.\" rather than a formal organizational domain. \nThey request that you send your CV and bank statement.",
+      "options": [
+        "Send your CV and details right away",
+        "Reply asking for more information",
+        "Delete the email and do not respond",
+        "Visit the Gmail account to check if it’s real"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "explanation": "Fraudsters usually use counterfeit applications to steal data or install viruses. The actual employer would not need to have an unknown app downloaded to start working.",
+      "asset_image": null,
+      "red_flag_rules": []
+    },
+    {
+      "id": "job-offers-028",
+      "prompt": "You receive a text message from an unknown number saying he is Emily of Indeed. The advertisement is a 60-90-minute online remote job with a pay of $100-500/day.\nIt requests you to respond in the form of yes or no in case you are interested.\n What is the safest action?",
+      "options": [
+        "Delete the message immediately without replying",
+        "Reply “no” to let them know you are not interested",
+        "Ask for more details before deciding",
+        "Share the message with a friend who is job hunting"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "explanation": "It is a scam that offers unrealistic remuneration by an anonymous party masquerading as Indeed. Legitimate recruiters will never \nsend you random yes or no text messages \nand even responding will make you active. The best thing to do is to delete it.",
+      "asset_image": null,
+      "red_flag_rules": []
+    },
+    {
+      "id": "job-offers-029",
+      "prompt": "You get an email message whose subject is: Urgently Hiring - Start Tomorrow! It says that it is an international company and pays you $400 per day to work two hours at the job as a data-entry worker.\nThey indicate that you do not have to be present during an interview, although to guarantee a position, you must pay a $75 application fee, using a money transfer service.",
+      "options": [
+        "Pay the fee quickly to secure the position",
+        "Ignore and delete the email",
+        "Reply asking for a refund guarantee",
+        "Forward the email to your classmates"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "explanation": "Any offer of advance payment fees would be a fraud. Candidates are never requested to pay to apply to real companies. This is a typical fake job offer that is not \nrealistic in its payments and does not require an interview.",
+      "asset_image": null,
+      "red_flag_rules": []
+    },
+    {
+      "id": "job-offers-030",
+      "prompt": "On LinkedIn, a person sends a message saying that he is a recruiter with a leading technology company. Your profile is said to be ideal for working as a remote IT support with the remuneration of $ 2,500 a week. \nThey offer a Google Form contact where you are expected to complete the personal information, including your full name, address, phone number, and bank account details, to get your first paycheck.",
+      "options": [
+        "Fill in the form to get started",
+        "Report and block the sender",
+        "Ask them to send details via email instead",
+        "Save the link in case you want to apply later"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "explanation": "Authorized recruiters do not utilize random Google Forms to gather personal or financial data that is sensitive. This is an identity theft attempt.",
+      "asset_image": null,
+      "red_flag_rules": []
+    },
+    {
+      "id": "job-offers-031",
+      "prompt": "Someone calls on the phone and states that they are representatives of a high-end hotel chain. They inform you that you were chosen to occupy a high-paying position outside the country and that they would offer you free accommodation.\nThey, however, insist that you need to send a scanned copy of your passport and must also send 200 dollars as visa processing fees within 24 hours to guarantee the job.",
+      "options": [
+        "Send the documents and money immediately.",
+        "Decline the offer and hang up",
+        "Ask if you can pay later after arriving abroad",
+        "Forward the caller’s number to a friend who may be interested"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "explanation": "This is a scam that takes advantage of urgency to coerce victims. Legitimate employers use official procedures to handle the visa and never require immediate payment, either \nin the form of upfront costs or passport scans via telephone.",
+      "asset_image": null,
+      "red_flag_rules": []
+    },
+    {
+      "id": "job-offers-032",
+      "prompt": "You get a text message from an unknown number saying that it is Vivian of Seek. The advert is for an off-site job with AUD 150-300 a day pay for only 60-90 minutes of work. \nIt is immediate pay, paid leave, and requests you to write YES if you are interested. What should you do?",
+      "options": [
+        "Reply “YES” to apply immediately before the job is gone",
+        "Reply “NO” to politely decline the offer",
+        "Delete the message and block the sender",
+        "Forward the text to a friend who might want the job"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "explanation": "It is a scam that promises compensation that is too good to be true, with minimal effort by an unknown party pretending to be Seek. Random yes/no texts are not employed by real recruiters.\nThe safest thing to do is to block and delete the message.",
+      "asset_image": "assets/Jobs/image13.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "job-offers-033",
+      "prompt": "You get an email that states that it is the HR department of a shipping company in the world. The email states: \"We are in urgent need of administrative assistants who would work at home.\nNo interview required. The rate will be $450/day, 2 hours of easy work like answering emails. To secure your place, you must provide your full name, address, phone number, and a duplicate of your driver's license.\nAfter you provide us with the details, your contract will be sent to you at once.",
+      "options": [
+        "Send your personal details to secure the job",
+        "Ask for more information before sharing documents",
+        "Report and delete the email",
+        "Save the email in case you want to apply later"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "explanation": "It is a fake company since no actual company can pay high without the process, and the authentic companies do not request personal ID documents via email.\nBy giving such information, you are giving yourself exposure to identity theft.",
+      "asset_image": null,
+      "red_flag_rules": []
+    },
+    {
+      "id": "job-offers-034",
+      "prompt": "A recruiter reaches out to you on WhatsApp, stating that he is a hiring manager in a well-recognized financial institution. They are a remote customer service role that pays $2000 a week and tells you that you can work immediately without training.\nThey, however, describe that you must pay a processing fee of $100 on PayPal to unlock your employee account before you can get your first paycheck",
+      "options": [
+        "Pay the activation fee so you can start the job quickly",
+        "Refuse and block the recruiter",
+        "Negotiate with them to deduct the fee from your salary instead",
+        "Share the opportunity with your friends"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "explanation": "Any demand for advance payments is obviously a sham device. Official employers do not collect activation or training charges from the candidates.\nThe excessive compensation with no qualifications is another warning.",
+      "asset_image": null,
+      "red_flag_rules": []
+    },
+    {
+      "id": "job-offers-035",
+      "prompt": "You are looking for a new job and have submitted your CV to several well-known job searching websites and agencies. You get this message, what are your thoughts?",
+      "options": [
+        "This is a scam: too good to be true because of very high pay for little work, no clear job role, and strange requirements.",
+        "This is not the case, because you are looking for a job and you have submitted your CV to several job searching websites and agencies.",
+        "This is a scam: suspicious communication because it was sent from an unknown number, it asks for a quick yes or no, and it is not through the official company channel.",
+        "This is not a scam: you are 23 years old, and this is a great deal."
+      ],
+      "correct_indices": [
+        0,
+        2
+      ],
+      "explanation": null,
+      "asset_image": "assets/Jobs/image14.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "job-offers-036",
+      "prompt": "“This is NOT a SCAM”.  Is this statement true or false?",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "explanation": "This is a scam. Real jobs do not offer high payments with the lack of work or the appearance in some random texts that require immediate responses",
+      "asset_image": "assets/Jobs/image15.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "job-offers-037",
+      "prompt": "What kind of a scam is this?",
+      "options": [
+        "Money Mule scam - when the scammers use you to move stolen money through your account",
+        "Responding scam - when you receive stolen goods and send them overseas",
+        "Check Overpayment scam - scammers send a fake check, tell you to cash it, and ask you to send part of the money back.",
+        "Work from home - easy money scam - when scammers promise high pay for simple tasks"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "explanation": "Never trust a job that sends you a check and asks you to return part of the money. The check is fake, and you'll lose your own cash when it bounces",
+      "asset_image": "assets/Jobs/image16.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "job-offers-038",
+      "prompt": "You are looking for a job, and you got this email. You identify red flags in this email. Some of them are?",
+      "options": [
+        "Promises very high pay ($500 for only 8 hours)",
+        "Clearly stated job role with proper details",
+        "Uses shortened URL",
+        "Send by unknown sender"
+      ],
+      "correct_indices": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "Very high pay, shortened links, and unknown senders are red flags. A clearly stated job role is not.",
+      "asset_image": "assets/Jobs/image17.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "job-offers-039",
+      "prompt": "You get this call, What is your next move?",
+      "options": [
+        "Pay $50",
+        "Hang up the call and block the number",
+        "Ask for more details",
+        "Hang up the call and call them back"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "explanation": "Real recruiters will never ask you to pay a registration fee. If someone calls and demands money to get a job, it's a scam. Hang up and block the number",
+      "asset_image": "assets/Jobs/image18.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "job-offers-040",
+      "prompt": "You are a university student, and you get this email offering $400 a week for a “Research Assistant” role. It looks like a big opportunity, but \nit asks you to send your personal details through the “Signal App\". What will you do?",
+      "options": [
+        "Reply, write away, and send the details",
+        "Download and install the Signal app",
+        "Stop and check with the university directly before doing anything.",
+        "Ignore the red flags because the pay is good."
+      ],
+      "correct_indices": [
+        2
+      ],
+      "explanation": "On such apps as WhatsApp or Signal, scammers can impersonate universities or professors. Always confirm the offers with the official university",
+      "asset_image": "assets/Jobs/image19.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "job-offers-041",
+      "prompt": "Is this not a scam?",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "explanation": "This statement is false because the message is a scam. It promises very high pay for very little work, comes from an unknown number, \nand pressures you to reply, “yes” or “no”. Real job offers don’t arrive this way.",
+      "asset_image": "assets/Jobs/image20.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "job-offers-042",
+      "prompt": "When you get this message, what will be your next move?",
+      "options": [
+        "Task for more details.",
+        "Type “YES”",
+        "Delete and report",
+        "Ignore the message"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "explanation": "The safest move is to delete and report it. Simply ignoring is not enough - reporting helps stop the scam from reaching others",
+      "asset_image": "assets/Jobs/image21.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "job-offers-043",
+      "prompt": "You get a call, Is this a scam or not a scam?",
+      "options": [
+        "This is a scam",
+        "This is not a scam"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "explanation": "This is a scam - real HR will never ask for your date of birth or bank details over the phone",
+      "asset_image": "assets/Jobs/image22.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "job-offers-044",
+      "prompt": "Your partner shows this conversion to you, and you say that this is a good opportunity. But what are your thoughts?",
+      "options": [
+        "This is a scam - delete it and report it.",
+        "This is not a scam - ask for more details",
+        "This is a scam - they send this to your partner",
+        "This is a scam - the job description is very suspicious"
+      ],
+      "correct_indices": [
+        0,
+        3
+      ],
+      "explanation": "It is a scam that has an ambiguous job description and spam messages. The most secure thing to do is to delete and report it.",
+      "asset_image": "assets/Jobs/image23.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "job-offers-045",
+      "prompt": "Your friend showed this conversation between him/her and a scammer. What are your thoughts about friend behavior?",
+      "options": [
+        "A friend has identified this as a scam. That's a relief.",
+        "Friend hasn't blocked the number yet, even though he/she knows this is a scam.",
+        "Friend replied to the message, which is something that should be done.",
+        "Friends know how scammers behave."
+      ],
+      "correct_indices": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "This is a scam, even if your friend knows it's fake, replying or not blocking the number is still risky. The safe step is to delete, block, and report.",
+      "asset_image": "assets/Jobs/image24.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "job-offers-046",
+      "prompt": "What are the red flags in this email?",
+      "options": [
+        "Not addressing you by your real name.",
+        "Professional tone with polite language",
+        "Suspicious link.",
+        "No full description of the job or job title."
+      ],
+      "correct_indices": [
+        0,
+        2,
+        3
+      ],
+      "explanation": "Generic greeting, a suspicious link, and no job details are red flags. A polite tone is not.",
+      "asset_image": "assets/Jobs/image25.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "job-offers-047",
+      "prompt": "Would you recommend this action that the message receiver has taken?",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "explanation": "Blocking and reporting the number is the right step once you identify a scam. It stops more messages and keeps you safe.",
+      "asset_image": "assets/Jobs/image26.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "job-offers-048",
+      "prompt": "Are you going to respond to this message because this will give you easy money?",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "explanation": "This is a money mule scam. Scammers ask you to move money from them, but it's stolen funds. You could lose money and even get into legal trouble",
+      "asset_image": "assets/Jobs/image27.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "job-offers-049",
+      "prompt": "You get a WhatsApp message , Why is this a scam?",
+      "options": [
+        "The message uses polite language.",
+        "It pressures you to reply quickly.",
+        "Real HR teams don't recruit through random WhatsApp messages.",
+        "The pay is unrealistically high for a simple task."
+      ],
+      "correct_indices": [
+        1,
+        2,
+        3
+      ],
+      "explanation": "Scams often promise big money for easy work, come from random contacts, and push you to act fast. Politeness doesn't make the message safe",
+      "asset_image": "assets/Jobs/image28.png",
+      "red_flag_rules": []
+    }
+  ]
+}

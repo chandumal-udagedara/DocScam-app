@@ -1,0 +1,773 @@
+{
+  "schema_version": "1.0.0",
+  "content_version": "2026.08.27",
+  "pack_id": "delivery",
+  "title": "Delivery",
+  "locale": "en-AU",
+  "source": "migrated from lib/question_bank.dart",
+  "questions": [
+    {
+      "id": "delivery-001",
+      "prompt": "Late at night, you get an SMS that sends a message to you: Amazon Logistics: Your delivery will be withheld because of inaccurate billing information. You need to verify your card information now at: http://amazon-billingfix.net to complete the order. Failing to do this within 6 hours will cancel your parcel.\nHow should you respond?",
+      "options": [
+        "Enter your card details to ensure your Amazon parcel arrives",
+        "Ignore and delete the SMS, and check your Amazon account directly for updates ",
+        "Copy and paste the link into a different browser to double-check",
+        "Reply to the message asking for confirmation of your order number"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "explanation": "It is a phishing attack that aims to steal credit card details by creating a sense of urgency. Amazon does not request clients to update their billing using random texts. The right action is to delete the message and confirm the orders only on the official Amazon site or application",
+      "asset_image": null,
+      "red_flag_rules": []
+    },
+    {
+      "id": "delivery-002",
+      "prompt": "You get an SMS, which says: “DHL Delivery Attempt Failed. Your package has not been received because the handling fees ( AUD 4.99) have not been paid. To rebook delivery, one should pay with the help of the secure link: http://dhl-parcelupdate.com.. Unless something is done within 24 hours, the package will be returned. \nWhat is the safest action?",
+      "options": [
+        "Pay the AUD 4.99 fee immediately to secure delivery",
+        "Check the link on your computer instead of your phone ",
+        "Delete the message and verify delivery status directly on DHL’s official website ",
+        "Reply to the sender asking for the tracking number"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "explanation": "It is a scam that is aimed at deceiving you with a sense of urgency and a small fee that seems innocent. The counterfeit URL results in a phishing site that robs financial information. The most secure course of action is turn a blind eye to the connection and visit the official website/app of the courier to verify the information.",
+      "asset_image": null,
+      "red_flag_rules": []
+    },
+    {
+      "id": "delivery-003",
+      "prompt": "If you clicked a scam link accidentally, what should you shouldn’t do next?",
+      "options": [
+        "Ignore the whole incident",
+        "Act quickly and change passwords",
+        "Monitor accounts (Bank, emails)",
+        "Report the incident to the proper authorities."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "explanation": "Never ignore it if you clicked a scam link. That only gives scammers a move time. Instead, change your passwords right away, monitor your bank account, monitor your email account, and report the incident to the proper authorities.",
+      "asset_image": null,
+      "red_flag_rules": []
+    },
+    {
+      "id": "delivery-004",
+      "prompt": "When you get an email or message regarding a delivery issue. What is not the safest step that you should follow?",
+      "options": [
+        "Contact the official number of the delivery service.",
+        "Delete and report the incident",
+        "Reply, follow the instructions, or call the number",
+        "Add an extra layer of security to your accounts(2FA)"
+      ],
+      "correct_indices": [
+        3
+      ],
+      "explanation": "If you get an email or message regarding a delivery issue, never reply, call, or follow the instructions directly. Instead, delete it, report it, or contact the delivery service through their official number and confirm if this message or email is real or fake.",
+      "asset_image": null,
+      "red_flag_rules": []
+    },
+    {
+      "id": "delivery-005",
+      "prompt": "On the day you receive this SMS in the late evening at an unknown number, it is as follows: RoyalMail Delivery: we have tried to deliver your parcel, but it could not be delivered because of the wrong address. To prevent being redispatched again, make sure to confirm your information and pay a little redelivery charge of 2.50 at the secure site below within 8 hours:http://royalmail-redeliv.xyz. Reply ‘Y’ to activate the link.” The message does not have a tracking number, contacts are not saved in your address book, and the domain of the links does not look familiar.\nWhat should you do?",
+      "options": [
+        "Reply ‘Y’ to activate the link, then open it and pay the £2.50 so your parcel isn’t returned",
+        "Copy the link into your desktop browser to check the site’s certificate and then proceed if it looks safe",
+        "Delete the message, block the number, and check your Royal Mail account or the official Royal Mail website/app for any delivery notices ",
+        "Reply asking for the parcel’s tracking number and sender details, then follow their instructions if they provide them"
+      ],
+      "correct_indices": [
+        3
+      ],
+      "explanation": "It is a phishing fraud that applies urgency and a small fee to lure you into a counterfeit website, which robs you of your information. Do not open SMS links that you are not familiar with; only confirm the deliveries through the official site or application of the courier.",
+      "asset_image": null,
+      "red_flag_rules": []
+    },
+    {
+      "id": "delivery-006",
+      "prompt": "An unknown number sends you a text that your parcel will be returned unless you update your \ndelivery location within 12 hours with the help of the link that it has sent: http://inlepoizl.shop. \nWhat should you do?",
+      "options": [
+        "Click the link quickly to update your address and avoid losing the parcel",
+        "Call the number in the text to confirm if the message is genuine",
+        "Ignore and delete the message without clicking the link ",
+        "Copy the link into another browser to double-check if it is safe"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "explanation": "Official websites or apps are also utilized by legitimate delivery companies and not random SMS links. The less risky one is to leave the message untouched and delete it.",
+      "asset_image": "assets/Delivery/image138.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "delivery-007",
+      "prompt": "You get a text message that it is an official FedEx. It reads: Your package is awaiting customs clearance. Pay AUD 2.99 now with the help of the following \nlink to prevent delays: http://fedex-clearance.top/parcel. \nWhat should you do?",
+      "options": [
+        "Pay the small fee quickly, so your delivery isn’t delayed",
+        "Ignore and delete the message without clicking the link ",
+        "Copy the link into a browser to confirm if it is real",
+        "Reply asking the sender for proof of the delivery"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "explanation": "This is a scam. Delivery companies do not charge little random fees via text with suspicious access. The connection will send you to \na phishing site to steal your payment information. The least harmful option is to disregard the message and delete it.",
+      "asset_image": null,
+      "red_flag_rules": []
+    },
+    {
+      "id": "delivery-008",
+      "prompt": "You get a text message telling you your parcel will not be delivered due to an invalid postal code. It consists of a link \n(https://auspostoiiza.shop/au) and instructions to reply with Y and reopen the message to use the link. \nThis is purportedly a message by the AusPost Team, and it encourages you to do it before the next 24 hours. \nWhat should you do?",
+      "options": [
+        "Click the link and enter your postal code to ensure the parcel is delivered.",
+        "Reply with “Y” to see if the link activates.",
+        "Ignore the message, delete it, and check your parcel status only through the official AusPost website or app .",
+        "Copy the link into another browser to test if it works safely"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "explanation": ": It is a phishing scheme where the urgency can be used to pressure you to use a counterfeit link and steal your information.",
+      "asset_image": "assets/Delivery/image139.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "delivery-009",
+      "prompt": "A text message is received: \"Amazon Delivery: Your order could not be delivered because of a wrong billing address. \nCheck your information now at amazon-parcelverify. shop. or else your order is cancelled in 12 hours.\" What should you do ?",
+      "options": [
+        "Enter your billing details on the link to stop your order from being cancelled",
+        "Ignore and delete the message, then check your order status in your Amazon account ",
+        "Reply to the text asking for your order number",
+        "Forward the link to a friend to test it safely"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "explanation": ": It is a phishing scam in the image of Amazon. Fraudulent links steal credit and bank account information.\n The safest way to do it is to delete the message and check only the orders with the help of the official Amazon one.",
+      "asset_image": null,
+      "red_flag_rules": []
+    },
+    {
+      "id": "delivery-010",
+      "prompt": "You get several text messages from an unknown number saying that it is CA FasTrak. The texts indicate that you have a \nsmall balance to pay, 3.67 to be paid immediately via the link CAtollinvoice.com, and otherwise you will be charged a late fee of 49.67.\nWhat should you do?",
+      "options": [
+        "Pay the $3.67 straight away to avoid the larger late fee",
+        "Copy the link into your browser to double-check if it’s real",
+        "Delete the messages and verify any toll balance only through the official CA FasTrak website or app ",
+        "Reply to the text asking for more information about the toll charge"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "explanation": ": This is a phishing scam. To seem innocent of what they are about with their requests, scammers request very little, such as $3.67, and urge you to act immediately. \nThe counterfeit site is meant to steal payments. The best solution would be to delete the message and to be careful and visit only \nthe official CA FasTrak site or application to estimate whether you will owe money or not.",
+      "asset_image": "assets/Delivery/image140.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "delivery-011",
+      "prompt": "You get a text message that purports to be from USPS. It states that there is no way your parcel can be delivered because you provided an incomplete address \nand gives a tracking number to make it sound more believable. It requires you to submit your particulars  within 24 hours using a link (https://usps.uspxstp.com/ipsps),\nor your package will be returned.What should you do?",
+      "options": [
+        "Click the link and update your address to stop the parcel from being returned",
+        "Reply “Y” as instructed to activate the link and confirm delivery",
+        "Delete the message and check any delivery updates only through the official USPS website or app ",
+        "Copy the link into a safe browser to test if it’s real before entering details"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "explanation": ":This is a phishing scam. The deceptive tracking number and urgent time frame are another type of trick to rob you of your details. Essentially, the only way is to delete the message and check deliveries only on the official USPS webpage or application.",
+      "asset_image": "assets/Delivery/image141.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "delivery-012",
+      "prompt": "You receive a message that says it is Evri Customer Service. It tells you that the delivery of your package is not possible because of the absence of an address or the damaged address information. \nTo repair it, they instruct you to use a link and even provide you with instructions to use Y in order to make the link operational.What is the safest response?",
+      "options": [
+        "Reply “Y” and update your details through the link so the package isn’t lost",
+        "Copy the link into a browser to confirm if it’s real before entering any details",
+        "Delete the message and check any parcel updates only on Evri’s official website or app",
+        "Forward the message to a friend to see if they’ve received something similar"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "explanation": ":This is a phishing scam. To fool you into clicking links to steal personal or payment information, scammers exploit imaginary delivery mistakes and emergency orders. The most secure one is to disregard the message and use the official courier site or application to view deliveries.",
+      "asset_image": "assets/Delivery/image142.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "delivery-013",
+      "prompt": "You are on a webpage that resembles a parcel tracking webpage. It displays a tracking number, dates, and delivery notices, such as 'We attempted to deliver your parcel today, and it is currently stocked in the warehouse.' \nOn the page, there is a red button marked with Schedule Your Delivery. The web address, though, is not the one belonging to the official courier, and there are spelling errors such as shipping and delivered. What is the safest action ?",
+      "options": [
+        "Ignore the spelling mistakes and click “Schedule Your Delivery” to reschedule your parcel.",
+        "Close the page and instead log in to the courier’s official website or app to check if you have a real delivery.",
+        "Enter your personal details carefully, but avoid entering your payment information.",
+        "Share the webpage with a friend to ask if they think it’s legitimate"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "explanation": ":This is a phishing site. Fraudsters duplicate the tracking pages of parcels to lure you into clicking the bogus buttons and processing personal or payment information. The best thing to do is to abandon the page and use the official website or app of the courier only.",
+      "asset_image": "assets/Delivery/image143.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "delivery-014",
+      "prompt": "You get a text message purporting to be an Australian post message. It informs that your parcel is put on hold because of an invalid postal code and suggests that you should check your address within 24 hours with the help of the link: https://aupost-todoors.top/Aupost. \nIt threatens to cancel the delivery in case you do not act and even asks you to respond with Y to turn on the link.What is the safest action?",
+      "options": [
+        "Reply “Y” and update your address through the link so the parcel isn’t cancelled",
+        "Copy the link into your browser to check if the page looks official before entering details",
+        "Delete the message immediately and check your delivery status only through the official Australia Post website or app ",
+        "Forward the message to a friend and ask if they have received something similar"
+      ],
+      "correct_indices": [
+        2
+      ],
+      "explanation": ":This is a phishing scam. The deceptive website and the pressing time frame are aimed at deceiving you into sharing personal or financial information. The most secure means of action is to disregard the message and receive deliveries only through the official postal service.",
+      "asset_image": "assets/Delivery/image144.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "delivery-015",
+      "prompt": "You get a message that claims to be from Australia Post. It says your parcel cannot be delivered because of an invalid postal code and gives you 24 hours to fix it. The text includes a suspicious link: https://auspost-com-a□.win/au, and asks you to reply “Y” to activate the link. What should you do?",
+      "options": [
+        "Reply “Y” and follow the link to quickly update your postal code before the parcel is cancelled",
+        "Delete the message, then report it as spam or phishing through your phone provider or Scamwatch ",
+        "Copy the link into another browser to check if the page looks official",
+        "Share the message with a friend to ask if they received something similar"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "explanation": ":This is a phishing scam. The bogus address and time-sensitive nature are meant to deceive you into providing information. The safest one is to report and remove the message.",
+      "asset_image": "assets/Delivery/image145.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "delivery-016",
+      "prompt": "You are getting a message that appears to be an mail from DHL Express. It claims that you have a package that is under delivery, and you are required to pay AUD 2.99 as unpaid shipping charges. \nSuch links as Please complete the shipping transaction and the warning message that the parcel will be returned within 48 hours are included in the email. What should you do?",
+      "options": [
+        "Pay the AUD $2.99 through the link so your package won’t be returned.",
+        "Report the email as phishing or spam through your email provider.",
+        "Forward the email to a friend to see if they think it’s genuine.",
+        "Click the link, but only enter your name and address, not payment details"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "explanation": ":This is a phishing scam. The fraudsters take advantage of minor charges to make people fall victim to spurious payments and lose information. It is the safest as it is recommended to report the email and delete it.",
+      "asset_image": "assets/Delivery/image146.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "delivery-017",
+      "prompt": "You get an email that looks like it comes from DHL Express. According to it, your package is withheld in Terminal 1 due to an outstanding shipping fee of AUD $2.99. \nThe message contains official-looking branding, the urgent use of words, and links that can be clicked, and which write the words please complete the shipping transaction and confirm the payment to deliver it.\nThey are telling you that you have 48 hours to act or your parcel will be returned. What is the safest response?",
+      "options": [
+        "Pay the AUD $2.99 immediately through the link, so your parcel isn’t returned",
+        "Report the email as phishing using your email provider’s “Report” button",
+        "Click the link to check if the website looks official before deciding",
+        "Forward the email to DHL’s support team, but keep the link open in case you need it later"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "explanation": ":This is a phishing scam. The imitation DHL labelling and the low price are created to make the email appear authentic. You are revealing your information when you click the link. The most secure thing to do is to declare it phishing and get rid of it.",
+      "asset_image": null,
+      "red_flag_rules": []
+    },
+    {
+      "id": "delivery-018",
+      "prompt": "This is a high-volume scam sent via messages and RCS. What is the objective of this message?",
+      "options": [
+        "To complete the address and send the package.",
+        "Stealing personal information and credit details.",
+        "To stop the future delays.",
+        "To arrange a new delivery time."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "explanation": ":Scammers want you to click the link and enter your private details, such as your name, address, and card details. The “delivery problem is just a bait.",
+      "asset_image": "assets/Delivery/image147.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "delivery-019",
+      "prompt": "You receive this message while waiting for a parcel. What is your next move?/moves",
+      "options": [
+        "Panic and fill the form.",
+        "Read carefully and identify the red flags.",
+        "Delete the message.",
+        "Report the message to Apple or Google."
+      ],
+      "correct_indices": [
+        1,
+        2,
+        3
+      ],
+      "explanation": ":Don't panic and give scammers what they want. Instead, stay calm, check for red flags, delete the message, and report it. Then you can protect others, too.",
+      "asset_image": "assets/Delivery/image148.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "delivery-020",
+      "prompt": "What is the right decision?",
+      "options": [
+        "Click the link - because you do not want to pay extra.",
+        "Don't click the link - because you can go and take it.",
+        "Click the link - because you want to see the details of the parcel.",
+        "Don't click the link, because the link looks suspicious."
+      ],
+      "correct_indices": [
+        3
+      ],
+      "explanation": ":This is the safest behavior. Do not click any of the links or buttons in the message if they are suspicious and untrustworthy.",
+      "asset_image": "assets/Delivery/image149.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "delivery-021",
+      "prompt": "What are the red flags in this message?",
+      "options": [
+        "The rush (within 24 hours).",
+        "Unofficial link.",
+        "Strange instructions.",
+        "Professional language and tone"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2
+      ],
+      "explanation": ":Scammers often create urgency, use non-official links, and give strange instructions. Professional tone alone is not a red flag.",
+      "asset_image": "assets/Delivery/image150.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "delivery-022",
+      "prompt": "Sending fake delivery messages is one of the ways of delivery scams happening. What are the other well-known ways in which delivery scams happen?",
+      "options": [
+        "Email",
+        "Calls",
+        "Post",
+        "Door to door"
+      ],
+      "correct_indices": [
+        0,
+        1
+      ],
+      "explanation": ":Delivery scams don't only come by text. They can also arrive by email or even fake phone calls. Always check with the official delivery service before acting.",
+      "asset_image": null,
+      "red_flag_rules": []
+    },
+    {
+      "id": "delivery-023",
+      "prompt": "What are some of the common red flags in a scam email?",
+      "options": [
+        "Poor format with bad grammar.",
+        "Sense of urgency.",
+        "Mismatched email address.",
+        "Professional design with consistent branding"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2
+      ],
+      "explanation": ":Poor grammar, urgent pressure, and mismatched sender addresses are classic phishing red flags. A professional, consistent design is not a red flag on its own.",
+      "asset_image": null,
+      "red_flag_rules": []
+    },
+    {
+      "id": "delivery-024",
+      "prompt": "Your mom showed you this email that she got. What is your first move?",
+      "options": [
+        "Delete and report.",
+        "Ask her to click the link.",
+        "Reply to the email.",
+        "Copy and paste the link into the browser"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "explanation": ":The Safest move is to delete and report. Never click the link, reply to it,  or copy it into the browser, as that only helps the scammer.",
+      "asset_image": "assets/Delivery/image151.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "delivery-025",
+      "prompt": "What is your next step?",
+      "options": [
+        "Click the link.",
+        "Delete the message.",
+        "Reply to the message.",
+        "Call the number."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "explanation": ":The safest next step is to delete the message because scam texts often include fake links and ask for your details. Don't click, reply, or call the number.",
+      "asset_image": "assets/Delivery/image152.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "delivery-026",
+      "prompt": "What are the red flags in this email?",
+      "options": [
+        "Asking for a fee.",
+        "Urgency.",
+        "A trick to get the user's details.",
+        "Have the failed delivery details."
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2
+      ],
+      "explanation": ":Scam delivery messages often ask for fees, create urgency,y or trick you into giving personal details. They can even make up fake delivery failed details to look real. So don't believe them.",
+      "asset_image": "assets/Delivery/image153.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "delivery-027",
+      "prompt": "What is the correct response?",
+      "options": [
+        "Click the button to fix your inbox.",
+        "Delete the email without clicking any links.",
+        "Reply and ask for clarification.",
+        "Forward to friends for awareness."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "explanation": ":The safest option is to delete without clicking. Legitimate institutions do not use fear tactics or ask you to “restore” inboxes. Clicking could lead to credential theft.",
+      "asset_image": "assets/Delivery/image154.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "delivery-028",
+      "prompt": "Which red flag shows this is a scam?",
+      "options": [
+        "The message demands a small payment fee.",
+        "It mentions Royal Mail by name.",
+        "It talks about a package delivery.",
+        "It includes a shipping charge."
+      ],
+      "correct_indices": [
+        0
+      ],
+      "explanation": ":The scammer is exploiting urgency and the idea of a low-cost fee to get you to pay quickly. Official couriers never request payment, this way they will direct you to their official website or send a proper invoice.",
+      "asset_image": "assets/Delivery/image155.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "delivery-029",
+      "prompt": "How can you spot this scam?",
+      "options": [
+        "It politely apologizes.",
+        "It provides a suspicious reschedule link.",
+        "It mentions package return.",
+        "It talks about a delivery driver."
+      ],
+      "correct_indices": [
+        1
+      ],
+      "explanation": ":The biggest red flag is the fake link. Real couriers will leave a card at your door or send a notice through their official app. They will not text you random URLs to reschedule deliveries.",
+      "asset_image": "assets/Delivery/image156.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "delivery-030",
+      "prompt": "“We tried to deliver your parcel today but could not find your address. Please confirm your details at the link below to arrange redelivery. Use safari browser to open this link.” You get this message. What is your next step?",
+      "options": [
+        "Click the link and enter details.",
+        "Ignore or delete the message.",
+        "Call the number.",
+        "Ask for more details."
+      ],
+      "correct_indices": [
+        2
+      ],
+      "explanation": ":Always check the official courier app or website directly or call the official courier service)",
+      "asset_image": null,
+      "red_flag_rules": []
+    },
+    {
+      "id": "delivery-031",
+      "prompt": "You get this email. What is your next move?",
+      "options": [
+        "Click the link and pay immediately so your parcel isn’t returned,",
+        "Reply to the email asking for more information.",
+        "Delete the email or mark it as phishing.",
+        "Forward the email to friends to check if they also got it"
+      ],
+      "correct_indices": [
+        3
+      ],
+      "explanation": ":The safest and recommended action is to delete or mark the email as phishing. Real courier companies will only ask you to pay fees or track parcels through their official website, never through random emails like this.",
+      "asset_image": "assets/Delivery/image159.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "delivery-032",
+      "prompt": "You recently send a gift your friend, and then you receive this email. What is your next move?",
+      "options": [
+        "Fill in the survey with your password.",
+        "Delete the email and ignore it.",
+        "Reply asking if the offer is real.",
+        "Forward it to friends"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "explanation": ":This is where things get catchy!! Because you did just send something you might think this email is connected and genuine. You may even wat to share this with friends so they also with free delivery. But that’s exactly how scams trick people. They use timing, fake rewards and urgent wordings.\nReal delivery companies will never ask for your email password or offer vouchers this way.",
+      "asset_image": "assets/Delivery/image160.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "delivery-033",
+      "prompt": "You get an email with above subject, what should you do?",
+      "options": [
+        "Open the pdf immediately.",
+        "Delete the email without opening the file.",
+        "Reply asking for a tracking number.",
+        "Save the file to check later."
+      ],
+      "correct_indices": [
+        2
+      ],
+      "explanation": ":Malicious files often disguise themselves as safe looking PDFs. Opening them can install malware on your device. Real couriers will give you a tracking link on their official website not send random attachments.",
+      "asset_image": "assets/Delivery/image161.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "delivery-034",
+      "prompt": "What is the safest thing to do?",
+      "options": [
+        "Click the link and update your address immediately.",
+        "Reply to activate the link.",
+        "Ignore and delete the message.",
+        "Copy the link into your browser to check."
+      ],
+      "correct_indices": [
+        2
+      ],
+      "explanation": ":Scammers combine fake links, deadline and odd instructions to trick you into giving away personal details.",
+      "asset_image": "assets/Delivery/image162.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "delivery-035",
+      "prompt": "Your friend get this email and as a “Dot Scammer” user you say to him/she to delete it but he/she wants know why?",
+      "options": [
+        "Delete the email or mark it as phishing: because deleting it will automatically reschedule your delivery.",
+        "Delete the email or mark it as phishing: because the correct my address button is likely a phishing link.",
+        "Delete the email or mark it as phishing: because the message uses a generic greeting (“Dear User”) instead of your real name.",
+        "Delete the email or mark it as phishing: because real couriers provide valid tracking information, not fake or unavailable numbers. "
+      ],
+      "correct_indices": [
+        1,
+        2,
+        3
+      ],
+      "explanation": null,
+      "asset_image": "assets/Delivery/image163.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "delivery-036",
+      "prompt": "“This is DHL. Your package is on hold at customs. Please provide your date of birth and credit card details to release it” This is a SCAM, but why? Choose the correct red flag pair.",
+      "options": [
+        "The caller says they are from DHL AND speaks politely.",
+        "Parcel being held AND genuine DHL contact.",
+        "Asking for credit card details AND asking for date of birth.",
+        "Urgency to pay fee AND polite language."
+      ],
+      "correct_indices": [
+        2
+      ],
+      "explanation": ":The scam is obvious because it asks for credit card details and your date of birth, information no legitimate courier would request this way.",
+      "asset_image": null,
+      "red_flag_rules": []
+    },
+    {
+      "id": "delivery-037",
+      "prompt": "“You have been added to AusPost VIP Group. Verify your membership by clicking here: http://auspost-vip-check.net” \nOne of your family members gets this WhatsApp message. As a user of “Dot Scammer” you identify this as a scam. And you advise them to block and delete this chat. But they ask why?",
+      "options": [
+        "WhatsApp groups are not used by AusPost.",
+        "Link is not the official AusPost domain.",
+        "Creates fake VIP status to trick users.",
+        "Group invite proves it’s real"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2
+      ],
+      "explanation": ":Anyone can create WhatsApp groups-even scammers.",
+      "asset_image": null,
+      "red_flag_rules": []
+    },
+    {
+      "id": "delivery-038",
+      "prompt": "Why this email is legitimate?",
+      "options": [
+        "Sent from official domain.",
+        "Uses your real name.",
+        "Provides a valid tracking ID that works on AusPost website.",
+        "Asks for payment link"
+      ],
+      "correct_indices": [
+        0,
+        1,
+        2
+      ],
+      "explanation": ":Official sender + your name + a verifiable tracking ID. Asking for payment would be a red flag, so D is not correct.",
+      "asset_image": "assets/Delivery/image164.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "delivery-039",
+      "prompt": "Do you want to reschedule this package?",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "explanation": "Scammers send fake delivery texts asking you to pay small fees through strange links. Always check deliveries through the official courier website or app, not links in random messages.",
+      "asset_image": "assets/Delivery/image123.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "delivery-040",
+      "prompt": "Is this a scam message?",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "explanation": "This is a scam because the link is not the official USPS website and asks for personal details to confirm delivery. Real postal services don't ask for your information this way.",
+      "asset_image": "assets/Delivery/image125.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "delivery-041",
+      "prompt": "This SMS claims you have a package waiting and provides a tracking code with a shortened link. Is this safe?",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "explanation": "Scammers use random tracking codes that look real but don’t match any official format. The shortened link hides the true destination, which is a classic phishing trick. Clicking could lead to a fake site designed to steal login or payment details.",
+      "asset_image": "assets/Delivery/image137.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "delivery-042",
+      "prompt": "You get the above email mentioning that your shipment is scheduled for delivery. There is a “Sign in” button to sign in and reconfirm the delivery address. When you click that button, they are asking for your email address and password to sign in to your FedEx account. But when you enter your password, the web page says the password is incorrect.Which statement is true?",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "explanation": "This is a phishing scam. The web page is deliberately designed to trick you into giving away your email credentials under the disguise of a delivery confirmation.",
+      "asset_image": "assets/Delivery/image126.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "delivery-043",
+      "prompt": "Courier calls from an unknown number asking for your card details. Is this OK?",
+      "options": [
+        "A scam",
+        "A legitimate"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "explanation": "This is a scam because the sender's email address is fake, and it asks you to click a link to reschedule delivery. Real USPS messages only come from their official site.",
+      "asset_image": "assets/Delivery/image128.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "delivery-044",
+      "prompt": "This SMS says your package could not be delivered and gives a link to check status. Is this safe?",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "explanation": "Delivery companies never send generic links asking you to “check status.” The suspicious domain is unrelated to any real courier service. Clicking could install malware or trick you into entering personal details like your address, date of birth, or credit card number.",
+      "asset_image": "assets/Delivery/image135.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "delivery-045",
+      "prompt": "This message says your delivery is delayed and urges you to click urgently to update preferences. Is it safe?",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "explanation": "The use of urgent language (“URGENT!!” and “reschedule immediately”) is designed to scare you into acting without thinking. Real companies don’t threaten you or demand instant action. The suspicious link is another clear warning sign.",
+      "asset_image": "assets/Delivery/image157.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "delivery-046",
+      "prompt": "This email claims to be from DHL asking you to pay $1.99 to release your package. Is this safe?",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "correct_indices": [
+        1
+      ],
+      "explanation": "Fake courier emails often use a very small “release fee” to trick you. Real DHL shipments are managed through official invoices and secure portals, not random emails. The suspicious sender address and low fee are clear scam signs.",
+      "asset_image": "assets/Delivery/image158.png",
+      "red_flag_rules": []
+    },
+    {
+      "id": "delivery-047",
+      "prompt": "Customs hold:  Your package is delayed at the boarder. Pay $15 immediatly using the link below or your item will be returned. (http://customs-clearance-fee.org) \nIs this message is a scam?",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "explanation": "Scammers create fake urgency by asking for quick payments through links. Real customs or couriers will never demand money by random emails or texts.",
+      "asset_image": null,
+      "red_flag_rules": []
+    },
+    {
+      "id": "delivery-048",
+      "prompt": "Congratulations! As a loyal customer you have won free express delivery for 6 months. Claim your reward here. (http://fasttrack-freepromo.co ) \nIs this message is a scam?",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "correct_indices": [
+        0
+      ],
+      "explanation": "Scammers use fake rewards and prizes to trick you into clicking links. Real delivery companies don’t give loyalty gifts by random emails or texts.",
+      "asset_image": null,
+      "red_flag_rules": []
+    }
+  ]
+}

@@ -1,8 +1,1 @@
 include: package:flutter_lints/flutter.yaml
-
-analyzer:
-  exclude:
-    # Command-line developer tools, not app code. They print to stdout by
-    # design and import from lib/ by relative path so they can run with
-    # `dart run` without a package context.
-    - tool/**

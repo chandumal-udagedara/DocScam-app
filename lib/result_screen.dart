@@ -1,9 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'constants.dart';
+import 'services/analytics_service.dart';
+import 'services/leaderboard_service.dart';
+import 'services/notification_service.dart';
+import 'services/progress_service.dart';
+
+// All category names used in the app — kept in sync with home_screen.
+const _allCategories = [
+  'Seasons', 'Delivery', 'Job Offers',
+  'Investment & Crypto', 'Romance Scams', 'Tech Support',
+  'Banking & Finance', 'Social Media',
+];
 
 /// Displays the quiz results: overall score and a breakdown of each question.
 /// Works with both single-answer and multiple-answer questions.
-class ResultScreen extends StatelessWidget {
+class ResultScreen extends StatefulWidget {
   const ResultScreen({
     super.key,
     required this.score,
@@ -22,6 +34,41 @@ class ResultScreen extends StatelessWidget {
   final List<Map<String, dynamic>> reviews;
 
   @override
+  State<ResultScreen> createState() => _ResultScreenState();
+}
+
+class _ResultScreenState extends State<ResultScreen> {
+  @override
+  void initState() {
+    super.initState();
+    _submitToLeaderboard();
+    _maybeShowReminder();
+  }
+
+  Future<void> _submitToLeaderboard() async {
+    await LeaderboardService.instance.submitScore(
+      category: widget.category,
+      score: widget.score,
+      total: widget.total,
+    );
+  }
+
+  Future<void> _maybeShowReminder() async {
+    try {
+      final svc = await ProgressService.getInstance();
+      final progress = await svc.getProgressData();
+      final completed = _allCategories
+          .where((c) => progress.categories.containsKey(c))
+          .length;
+      final remaining = _allCategories.length - completed;
+      await NotificationService.instance.showQuizReminderNotification(
+        completedCategory: widget.category,
+        remaining: remaining,
+      );
+    } catch (_) {}
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(
@@ -32,7 +79,7 @@ class ResultScreen extends StatelessWidget {
               gradient: LinearGradient(
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
-                colors: [Color(0xFF2C0038), Color(0xFF4B0F67)],
+                colors: [AppColors.bgDark, AppColors.headerBottom],
               ),
             ),
           ),
@@ -44,10 +91,10 @@ class ResultScreen extends StatelessWidget {
                 Expanded(
                   child: ListView.separated(
                     padding: const EdgeInsets.fromLTRB(16, 20, 16, 20),
-                    itemCount: reviews.length,
+                    itemCount: widget.reviews.length,
                     separatorBuilder: (_, __) => const SizedBox(height: 14),
                     itemBuilder: (context, i) {
-                      final r = reviews[i];
+                      final r = widget.reviews[i];
                       final List<String> options =
                           List<String>.from(r['options'] as List);
                       final List<int> pickedIndices =
@@ -78,13 +125,14 @@ class ResultScreen extends StatelessWidget {
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.white,
-                      foregroundColor: const Color(0xFF2C0038),
+                      foregroundColor: AppColors.bgDark,
                       minimumSize: const Size.fromHeight(44),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(12),
                       ),
                     ),
                     onPressed: () {
+                      AnalyticsService.screenView('home');
                       Navigator.pushNamedAndRemoveUntil(
                         context,
                         '/home',
@@ -126,7 +174,7 @@ class ResultScreen extends StatelessWidget {
         gradient: LinearGradient(
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
-          colors: [Color(0xFFB46BF2), Color(0xFF4B0F67)],
+          colors: [AppColors.headerTop, AppColors.headerBottom],
         ),
         borderRadius: BorderRadius.only(
           bottomLeft: Radius.circular(12),
@@ -143,7 +191,7 @@ class ResultScreen extends StatelessWidget {
           ),
           Expanded(
             child: Text(
-              '$category Challenge',
+              '${widget.category} Challenge',
               style: GoogleFonts.playfairDisplay(
                 color: Colors.white,
                 fontSize: 22,
@@ -151,24 +199,29 @@ class ResultScreen extends StatelessWidget {
               ),
             ),
           ),
-          Container(
-            width: 86,
-            height: 86,
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              color: Colors.black.withValues(alpha: 0.25),
-              border: Border.all(
-                color: Colors.white.withValues(alpha: 0.5),
-                width: 6,
+          Semantics(
+            label: 'Score: ${widget.score} out of ${widget.total}',
+            child: Container(
+              width: 86,
+              height: 86,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                color: Colors.black.withValues(alpha: 0.25),
+                border: Border.all(
+                  color: Colors.white.withValues(alpha: 0.5),
+                  width: 6,
+                ),
               ),
-            ),
-            alignment: Alignment.center,
-            child: Text(
-              '$score/$total',
-              style: GoogleFonts.playfairDisplay(
-                color: Colors.white,
-                fontSize: 20,
-                fontWeight: FontWeight.w800,
+              alignment: Alignment.center,
+              child: ExcludeSemantics(
+                child: Text(
+                  '${widget.score}/${widget.total}',
+                  style: GoogleFonts.playfairDisplay(
+                    color: Colors.white,
+                    fontSize: 20,
+                    fontWeight: FontWeight.w800,
+                  ),
+                ),
               ),
             ),
           ),
@@ -197,7 +250,7 @@ class _AnswerCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final Color markColor =
-        isCorrect ? const Color(0xFF1B5E20) : const Color(0xFFB71C1C);
+        isCorrect ? AppColors.correctGreen : AppColors.incorrectRed;
     final IconData markIcon = isCorrect ? Icons.check_circle : Icons.cancel;
 
     return Material(

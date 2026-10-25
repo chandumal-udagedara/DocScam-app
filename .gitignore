@@ -50,6 +50,4 @@ app.*.map.json
 key.properties
 keystore.properties
 android/local.properties
-google-services.json
-GoogleService-Info.plist
 .env

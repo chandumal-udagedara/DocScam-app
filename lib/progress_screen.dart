@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'constants.dart';
 import 'models/progress_model.dart';
 import 'services/progress_service.dart';
 import 'utils/date_formatter.dart';
@@ -37,7 +38,7 @@ class _ProgressScreenState extends State<ProgressScreen> {
               gradient: LinearGradient(
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
-                colors: [Color(0xFF2C0038), Color(0xFF4B0F67)],
+                colors: [AppColors.bgDark, AppColors.headerBottom],
               ),
             ),
           ),
@@ -52,7 +53,7 @@ class _ProgressScreenState extends State<ProgressScreen> {
                     gradient: LinearGradient(
                       begin: Alignment.topCenter,
                       end: Alignment.bottomCenter,
-                      colors: [Color(0xFFB46BF2), Color(0xFF4B0F67)],
+                      colors: [AppColors.headerTop, AppColors.headerBottom],
                     ),
                     borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(12),
@@ -116,6 +117,12 @@ class _ProgressScreenState extends State<ProgressScreen> {
                           _buildOverallStatsCard(progress),
                           const SizedBox(height: 20),
 
+                          /// Score Trend Chart (only shown once there are 2+ attempts)
+                          if (progress.totalQuizzes >= 2) ...[
+                            _buildTrendChart(progress),
+                            const SizedBox(height: 20),
+                          ],
+
                           /// Category Breakdown Title
                           Padding(
                             padding: const EdgeInsets.symmetric(horizontal: 4),
@@ -159,7 +166,7 @@ class _ProgressScreenState extends State<ProgressScreen> {
                           /// Clear Progress Button
                           ElevatedButton.icon(
                             style: ElevatedButton.styleFrom(
-                              backgroundColor: const Color(0xFFB71C1C),
+                              backgroundColor: AppColors.incorrectRed,
                               foregroundColor: Colors.white,
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(10),
@@ -233,7 +240,7 @@ class _ProgressScreenState extends State<ProgressScreen> {
           const SizedBox(height: 24),
           ElevatedButton(
             style: ElevatedButton.styleFrom(
-              backgroundColor: const Color(0xFFFF3B2E),
+              backgroundColor: AppColors.ctaRed,
               foregroundColor: Colors.white,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(10),
@@ -255,10 +262,10 @@ class _ProgressScreenState extends State<ProgressScreen> {
   Widget _buildOverallStatsCard(ProgressData progress) {
     final accuracy = progress.overallAccuracy;
     final accuracyColor = accuracy >= 70
-        ? const Color(0xFF1B5E20)
+        ? AppColors.correctGreen
         : accuracy >= 50
-            ? const Color(0xFFFFB300)
-            : const Color(0xFFB71C1C);
+            ? AppColors.warningAmber
+            : AppColors.incorrectRed;
 
     final lastDate = progress.lastQuizDate;
     final lastDateText = lastDate != null
@@ -305,6 +312,140 @@ class _ProgressScreenState extends State<ProgressScreen> {
                   Colors.purple,
                 ),
               ],
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  /// Score trend bar chart — shows the last 8 quiz attempts oldest-to-newest.
+  /// Each bar represents one attempt; height is proportional to score percentage.
+  /// Coloured by category so the user can see which area they are improving in.
+  Widget _buildTrendChart(ProgressData progress) {
+    // getAllAttempts() returns newest-first; reverse to get oldest-first.
+    final allAttempts = progress.getAllAttempts().reversed.toList();
+    final recent =
+        allAttempts.length > 8 ? allAttempts.sublist(allAttempts.length - 8) : allAttempts;
+
+    const double maxBarH = 72.0;
+    const Map<String, Color> catColors = {
+      'Seasons':              Color(0xFF4FC3F7), // light blue
+      'Delivery':             Color(0xFFFFB74D), // orange
+      'Job Offers':           Color(0xFF81C784), // light green
+      'Investment & Crypto':  Color(0xFFFFD54F), // amber
+      'Romance Scams':        Color(0xFFF48FB1), // pink
+      'Tech Support':         Color(0xFF80CBC4), // teal
+    };
+
+    return Material(
+      color: Colors.white.withValues(alpha: 0.08),
+      elevation: 0,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(12),
+        side: BorderSide(color: Colors.white.withValues(alpha: 0.15), width: 1),
+      ),
+      child: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              'Score Trend',
+              style: GoogleFonts.inter(
+                color: Colors.white,
+                fontSize: 16,
+                fontWeight: FontWeight.w700,
+              ),
+            ),
+            const SizedBox(height: 16),
+            // Chart bars
+            SizedBox(
+              height: maxBarH + 28, // bars + score label above + category initial below
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.end,
+                children: recent.map((attempt) {
+                  final frac =
+                      attempt.total > 0 ? attempt.score / attempt.total : 0.0;
+                  final barH = (frac * maxBarH).clamp(4.0, maxBarH);
+                  final color =
+                      catColors[attempt.category] ?? AppColors.headerTop;
+
+                  final pct = (frac * 100).round();
+                  return Expanded(
+                    child: Semantics(
+                      label:
+                          '${attempt.category}: ${attempt.score} out of ${attempt.total}, $pct percent',
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 2),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.end,
+                          children: [
+                            ExcludeSemantics(
+                              child: Text(
+                                '${attempt.score}',
+                                style: GoogleFonts.inter(
+                                  color: Colors.white.withValues(alpha: 0.7),
+                                  fontSize: 10,
+                                  fontWeight: FontWeight.w600,
+                                ),
+                              ),
+                            ),
+                            const SizedBox(height: 2),
+                            Container(
+                              height: barH,
+                              decoration: BoxDecoration(
+                                color: color.withValues(alpha: 0.85),
+                                borderRadius: const BorderRadius.vertical(
+                                    top: Radius.circular(4)),
+                              ),
+                            ),
+                            const SizedBox(height: 4),
+                            ExcludeSemantics(
+                              child: Text(
+                                attempt.category[0],
+                                style: GoogleFonts.inter(
+                                  color: Colors.white.withValues(alpha: 0.5),
+                                  fontSize: 10,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  );
+                }).toList(),
+              ),
+            ),
+            const SizedBox(height: 12),
+            // Legend
+            Wrap(
+              spacing: 16,
+              runSpacing: 6,
+              children: catColors.entries.map((e) {
+                return Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Container(
+                      width: 10,
+                      height: 10,
+                      decoration: BoxDecoration(
+                        color: e.value,
+                        borderRadius: BorderRadius.circular(2),
+                      ),
+                    ),
+                    const SizedBox(width: 4),
+                    Text(
+                      e.key,
+                      style: GoogleFonts.inter(
+                        color: Colors.white.withValues(alpha: 0.7),
+                        fontSize: 11,
+                      ),
+                    ),
+                  ],
+                );
+              }).toList(),
             ),
           ],
         ),
@@ -438,10 +579,10 @@ class _ProgressScreenState extends State<ProgressScreen> {
             : Icons.cancel;
 
     final iconColor = attempt.score == attempt.total
-        ? const Color(0xFF1B5E20)
+        ? AppColors.correctGreen
         : attempt.score >= attempt.total * 0.6
-            ? const Color(0xFFFFB300)
-            : const Color(0xFFD32F2F);
+            ? AppColors.warningAmber
+            : AppColors.historyRed;
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 8),
@@ -508,7 +649,7 @@ class _ProgressScreenState extends State<ProgressScreen> {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
-        backgroundColor: const Color(0xFF2C0038),
+        backgroundColor: AppColors.bgDark,
         title: Text(
           'Clear All Progress?',
           style: GoogleFonts.inter(color: Colors.white),
@@ -530,7 +671,7 @@ class _ProgressScreenState extends State<ProgressScreen> {
           ),
           ElevatedButton(
             style: ElevatedButton.styleFrom(
-              backgroundColor: const Color(0xFFB71C1C),
+              backgroundColor: AppColors.incorrectRed,
             ),
             onPressed: () async {
               final messenger = ScaffoldMessenger.of(context);

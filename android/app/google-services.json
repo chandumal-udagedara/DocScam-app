@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "188950605709",
+    "project_id": "docscam-app",
+    "storage_bucket": "docscam-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:188950605709:android:7ef5ef5ed7f6d6f51717c4",
+        "android_client_info": {
+          "package_name": "com.scamslayers.docscam"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUSaLZjSEkJdToVE9OPnrNTY_YeTrCzUg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

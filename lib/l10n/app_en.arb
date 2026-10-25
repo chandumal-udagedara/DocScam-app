@@ -1,0 +1,140 @@
+{
+  "@@locale": "en",
+
+  "appTitle": "DocScam",
+  "poweredBy": "@powered  by ScamSlayers",
+  "playButton": "Play",
+  "homeButton": "Home",
+  "tagline": "Level Up Your Scam sense!\nLet's play.",
+  "logoLabel": "DocScam app logo",
+
+  "welcome": "Welcome!",
+  "welcomeSubtitle": "Game time, Outsmart the scamsters.",
+  "selectBattlezone": "Select Your Battlezone",
+  "viewProgress": "View progress",
+  "viewProgressTooltip": "View Progress",
+  "viewDetails": "View Details \u2192",
+  "yourProgress": "\ud83d\udcca Your Progress",
+  "completed": "Completed",
+  "accuracy": "Accuracy",
+  "lastQuiz": "Last Quiz",
+  "reportAScam": "Report a Scam",
+  "reportSubtitle": "Links to official Australian reporting bodies",
+  "allCategoriesCompleted": "All categories completed! \ud83c\udf89",
+  "tapToViewCertificate": "Tap to view and share your certificate",
+  "reviewedDate": "Reviewed {date}",
+  "@reviewedDate": {
+    "placeholders": {
+      "date": { "type": "String" }
+    }
+  },
+  "couldNotLoadProgress": "Could not load progress data.",
+  "retry": "Retry",
+
+  "selectCorrectAnswer": "Please select correct answer",
+  "submitButton": "Submit",
+  "nextButton": "Next",
+  "finishButton": "Finish",
+  "correctLabel": "Correct!",
+  "incorrectLabel": "Incorrect",
+  "sourceAttribution": "Source: {source}",
+  "@sourceAttribution": {
+    "placeholders": {
+      "source": { "type": "String" }
+    }
+  },
+  "questionCounter": "Q{current}/{total}",
+  "@questionCounter": {
+    "placeholders": {
+      "current": { "type": "int" },
+      "total": { "type": "int" }
+    }
+  },
+  "imageUnavailable": "Image unavailable",
+
+  "progressTitle": "Your Progress",
+  "overallStatistics": "Overall Statistics",
+  "quizzesCompleted": "Quizzes\nCompleted",
+  "overallAccuracy": "Overall\nAccuracy",
+  "scoreTrend": "Score Trend",
+  "categoryBreakdown": "Category Breakdown",
+  "quizHistory": "Quiz History",
+  "clearAllProgress": "Clear All Progress",
+  "clearAllProgressTitle": "Clear All Progress?",
+  "clearAllProgressMessage": "This action cannot be undone. All your progress data will be permanently deleted.",
+  "cancelButton": "Cancel",
+  "clearButton": "Clear",
+  "allProgressCleared": "All progress cleared",
+  "noProgressYet": "No Progress Yet",
+  "completeQuizPrompt": "Complete a quiz to see your progress!",
+  "startAQuiz": "Start a Quiz",
+  "errorLoadingProgress": "Error loading progress",
+  "bestScore": "Best Score",
+  "average": "Average",
+  "never": "Never",
+  "attemptCount": "{count, plural, =1{1 attempt} other{{count} attempts}}",
+  "@attemptCount": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "lastDate": "Last: {date}",
+  "@lastDate": {
+    "placeholders": {
+      "date": { "type": "String" }
+    }
+  },
+
+  "categoryChallenge": "{category} Challenge",
+  "@categoryChallenge": {
+    "placeholders": {
+      "category": { "type": "String" }
+    }
+  },
+  "questionNumber": "Question {number}: {result}",
+  "@questionNumber": {
+    "placeholders": {
+      "number": { "type": "String" },
+      "result": { "type": "String" }
+    }
+  },
+  "correctAnswers": "Correct Answers:\n{answers}",
+  "@correctAnswers": {
+    "placeholders": {
+      "answers": { "type": "String" }
+    }
+  },
+  "correctAnswer": "Correct Answer:\n{answer}",
+  "@correctAnswer": {
+    "placeholders": {
+      "answer": { "type": "String" }
+    }
+  },
+  "explanationLabel": "Explanation: {text}",
+  "@explanationLabel": {
+    "placeholders": {
+      "text": { "type": "String" }
+    }
+  },
+  "scoreLabel": "Score: {score} out of {total}",
+  "@scoreLabel": {
+    "placeholders": {
+      "score": { "type": "int" },
+      "total": { "type": "int" }
+    }
+  },
+
+  "whatTypeOfScam": "What type of scam was it?",
+  "describeScam": "Briefly describe what happened",
+  "descriptionCopyHint": "Tap a reporting button below \u2014 your description will be copied to clipboard automatically.",
+  "reportToOfficialBody": "Report to an official body",
+  "reportInfoBanner": "Every report matters. Reporting scams helps authorities warn the public, disrupt criminal networks, and prevent others from losing money.",
+  "descriptionHint": "e.g. \"Received a WhatsApp message from +61 4XX... offering a job for $500/day\u2026\"",
+  "copiedToClipboard": "Description copied to clipboard \u2014 paste it into the report form",
+  "couldNotOpenUrl": "Could not open {url}",
+  "@couldNotOpenUrl": {
+    "placeholders": {
+      "url": { "type": "String" }
+    }
+  }
+}

@@ -1,4 +1,6 @@
 {
-   "java.configuration.updateBuildConfiguration": "interactive",
-   "cmake.sourceDirectory": "E:/00. ECU Units/(2025) Semester 2/Applied Projects/Assignment 2/DocScam-main/windows"
+  // This is a Flutter project. Stop the Java extension from treating the
+  // android/ folder as a Java/Gradle project (Flutter builds it itself).
+  "java.import.gradle.enabled": false,
+  "java.configuration.updateBuildConfiguration": "disabled"
 }
